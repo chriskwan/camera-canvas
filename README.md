@@ -1,5 +1,9 @@
 # Camera Canvas: Image Editing Software for People with Disabilities
 
+Original website: [http://cs-people.bu.edu/ckwan/cameracanvas](http://cs-people.bu.edu/ckwan/cameracanvas)
+
+Original code (now archived): [https://code.google.com/archive/p/cameracanvas](https://code.google.com/archive/p/cameracanvas)
+
 [![Photo editing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop.png) [![A user using Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy33Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy.png) [![Drawing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw.png)
 
 [**Christopher Kwan**](http://cs-people.bu.edu/ckwan/) and [**Margrit Betke**](http://www.cs.bu.edu/~betke/)
