@@ -21,15 +21,9 @@ Both programs are completely free. We are constantly working on making them bett
 
 # Videos
 
-* User Interface and Configuration Demo:
-    * [<img src="http://img.youtube.com/vi/Ox3atxN1AUg/0.jpg" alt="User Interface and Configuration Demo" style="width: 200px;"/>](http://www.youtube.com/watch?v=Ox3atxN1AUg)
-
-Photo-editing Demo:
-[![Photo-editing Demo](http://img.youtube.com/vi/i6aMR-oThCM/0.jpg =425x349)](http://www.youtube.com/watch?v=i6aMR-oThCM "Photo-editing Demo")
-
-Drawing Demo:
-[![Drawing Demo](http://img.youtube.com/vi/iK8G-qCgaO8/0.jpg =425x349)](http://www.youtube.com/watch?v=iK8G-qCgaO8 "Drawing Demo")
-
+* [User Interface and Configuration Demo](http://www.youtube.com/watch?v=Ox3atxN1AUg)
+* [Photo-editing Demo](http://www.youtube.com/watch?v=i6aMR-oThCM)
+* [Drawing Demo](http://www.youtube.com/watch?v=iK8G-qCgaO8)
 
 # Papers
 
