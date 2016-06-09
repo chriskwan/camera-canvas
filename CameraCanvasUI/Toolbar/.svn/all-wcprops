@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/670/branches/chris/CameraCanvasUI/Toolbar
+END
+RedoCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/RedoCCButton.cs
+END
+MainMenuCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/MainMenuCCButton.cs
+END
+PrevCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/PrevCCButton.cs
+END
+SlideToButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/668/branches/chris/CameraCanvasUI/Toolbar/SlideToButton.cs
+END
+NextCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/NextCCButton.cs
+END
+BackCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/BackCCButton.cs
+END
+SettingsCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/SettingsCCButton.cs
+END
+SelectionCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/SelectionCCButton.cs
+END
+UndoCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbar/UndoCCButton.cs
+END

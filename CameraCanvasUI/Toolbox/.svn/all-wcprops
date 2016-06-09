@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox
+END
+AboutForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/AboutForm.resx
+END
+AboutCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/AboutCCButton.cs
+END
+AboutForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/AboutForm.Designer.cs
+END
+DrawingCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/DrawingCCButton.cs
+END
+AboutForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/AboutForm.cs
+END
+EffectsCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/EffectsCCButton.cs
+END
+FileCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/FileCCButton.cs
+END
+ImageCCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Toolbox/ImageCCButton.cs
+END

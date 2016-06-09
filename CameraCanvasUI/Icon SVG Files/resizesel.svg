@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2912"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   width="75"
+   height="75"
+   sodipodi:docname="resizesel.png">
+  <metadata
+     id="metadata2918">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2916">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective2920" />
+    <inkscape:perspective
+       id="perspective2932"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2969"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="805"
+     inkscape:window-height="640"
+     id="namedview2914"
+     showgrid="false"
+     inkscape:zoom="3.1466667"
+     inkscape:cx="37.5"
+     inkscape:cy="37.5"
+     inkscape:window-x="273"
+     inkscape:window-y="6"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2912" />
+  <image
+     xlink:href="file:///D:/camcansvn/CCUI/CameraCanvasUI/Icons/resizesel.png"
+     width="75"
+     height="75"
+     id="image2922"
+     x="0"
+     y="0" />
+  <g
+     id="g2907"
+     transform="translate(125.69668,2.3846343)">
+    <rect
+       y="35.950565"
+       x="-118.34604"
+       height="24.200569"
+       width="61.573452"
+       id="rect2834-9"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1.00282133px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       id="text2828-1"
+       y="57.095932"
+       x="-117.57025"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:24px;font-family:Arial Black;-inkscape-font-specification:Arial Black"
+         id="tspan2832-4"
+         y="57.095932"
+         x="-117.57025"
+         sodipodi:role="line">BOX</tspan></text>
+  </g>
+  <g
+     id="g2995"
+     transform="matrix(0.89114659,0,0,0.89114659,3.2946608,9.2151792)">
+    <rect
+       y="6.3469691"
+       x="-1.3309944"
+       height="19.403519"
+       width="81.475548"
+       id="rect2834"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1.03292298px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       id="text2828-8"
+       y="23.122877"
+       x="-1.8304998"
+       style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:20px;font-family:Arial Black;-inkscape-font-specification:Arial Black"
+         id="tspan2832-2"
+         y="23.122877"
+         x="-1.8304998"
+         sodipodi:role="line">RESIZE</tspan></text>
+  </g>
+</svg>

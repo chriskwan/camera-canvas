@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCanvasUI", "CameraCanvasUI.csproj", "{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CameraCanvasSetup", "..\CameraCanvasSetup\CameraCanvasSetup.vdproj", "{582BFD7F-1845-4109-8D62-3777745D7160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582BFD7F-1845-4109-8D62-3777745D7160}.Debug|Any CPU.ActiveCfg = Debug
+		{582BFD7F-1845-4109-8D62-3777745D7160}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

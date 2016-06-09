@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="300"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="NextUp.svg">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect2967"
+       is_visible="true"
+       pattern="M 0,5 10,10 10,0 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2927">
+      <stop
+         style="stop-color:#28170b;stop-opacity:1;"
+         offset="0"
+         id="stop2929" />
+      <stop
+         style="stop-color:#28170b;stop-opacity:0;"
+         offset="1"
+         id="stop2931" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2837"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2874"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-4"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-8"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-45"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-11"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2935-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3020"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2927"
+       id="linearGradient2933"
+       x1="282.43161"
+       y1="973.34857"
+       x2="279.90991"
+       y2="751.50977"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1.6811406,0)" />
+    <inkscape:perspective
+       id="perspective2947"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2975"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4494"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4516"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4649"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5235"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3774"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3774-8"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3870"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1896685"
+     inkscape:cx="60.410685"
+     inkscape:cy="109.35459"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="1272"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Transparent Bkgrd"
+     style="display:inline">
+    <rect
+       style="fill:none"
+       id="rect3035"
+       width="303.44589"
+       height="302.60532"
+       x="-0.84056729"
+       y="-1.7647245"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d=""
+       id="path3867" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3869"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3871"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3873"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="Bkgrd"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-752.36218)"
+     style="display:inline">
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3875"
+       transform="translate(0,752.36218)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3877"
+       transform="translate(0,752.36218)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3879"
+       transform="translate(0,752.36218)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3881"
+       transform="translate(0,752.36218)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       d="m 10.655083,297.87851 c -2.0375471,-1.0757 -4.8394016,-3.56689 -6.2263426,-5.536 L 1.9070296,288.76235 1.6581441,151.61153 C 1.4842294,55.774134 1.680876,13.522613 2.310964,11.346451 3.5257046,7.151052 6.9980492,3.2023918 11.118528,1.330718 c 3.250647,-1.47656384 9.294249,-1.54386377 140.226872,-1.56152877 121.62785,-0.0164096 137.17574,0.12607924 139.94348,1.28251337 3.96293,1.6558216 6.65998,4.1788507 8.68212,8.1219552 1.55304,3.0283642 1.5988,7.0923672 1.58088,140.3752422 -0.0177,131.64678 -0.0819,137.394 -1.57025,140.61886 -1.87805,4.06919 -4.53911,6.63009 -8.69275,8.36559 -2.76713,1.15619 -18.35081,1.30097 -140.02142,1.30097 l -136.907746,0 -3.704631,-1.95581 0,0 z M 283.6609,291.81977 c 2.749,-1.36988 5.13376,-3.39562 6.67946,-5.67385 l 2.40399,-3.54329 0,-22.8323 0,-22.8323 -2.52171,-3.58113 c -1.38694,-1.96962 -4.1888,-4.46125 -6.22634,-5.53695 l -3.70464,-1.95581 -130.39836,0 -130.398363,0 -3.701807,1.89128 c -5.218583,2.66621 -8.2199579,6.79172 -9.3369311,12.834 -0.5630153,3.04563 -0.8033227,11.95763 -0.6114175,22.67493 0.2869777,16.0268 0.480889,17.96759 2.1001159,21.01942 0.9811699,1.84926 2.7305347,4.24561 3.8874777,5.32522 4.772286,4.45331 -1.275823,4.26475 138.060135,4.30445 l 129.49292,0.0369 4.27547,-2.13056 z M 165.96228,199.38559 c 19.07978,-1.5207 30.90493,-3.65559 43.91919,-7.9291 37.65406,-12.36448 64.73797,-38.84755 71.62691,-70.03791 2.05632,-9.31018 1.83054,-25.536736 -0.4707,-33.828256 C 274.89886,65.471726 258.61715,45.579539 235.69711,32.19546 202.85569,13.017835 158.2037,7.7255922 119.24624,18.393472 93.222434,25.519674 69.248684,40.84698 55.258077,59.303466 c -5.155369,6.80099 -12.117316,20.586392 -13.861011,27.446288 -1.972265,7.759111 -2.839883,18.630466 -2.079604,26.057676 0.861701,8.41801 1.274436,10.29427 3.94393,17.92878 l 2.154191,6.1608 -3.401312,3.50576 c -20.144562,20.76318 0.179396,44.03821 47.732354,54.66315 23.579335,5.26842 47.384245,6.61761 76.215655,4.31967 z"
+       id="path3883"
+       transform="translate(0,752.36218)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="TextBkgrd"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffffff"
+       id="rect2860-7"
+       width="286.37646"
+       height="67.43705"
+       x="6.4665661"
+       y="226.09639"
+       rx="17.024385"
+       ry="17.024385"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\UndoGray.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:72px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="39.739834"
+       y="285.2193"
+       id="text2889"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2891"
+         x="39.739834"
+         y="285.2193"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Arial Black;-inkscape-font-specification:Arial Black Heavy">PREV</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Image">
+    <rect
+       y="12.11667"
+       x="113.62743"
+       height="68.140007"
+       width="74.642998"
+       id="rect5260-5"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f0f;stroke-width:2.53692126;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(0.33523599,0,0,0.33523599,58.691201,71.490968)"
+       id="g3759"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f0f;stroke-width:6.63247919;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect5260"
+         width="195.14525"
+         height="178.14395"
+         x="176.59021"
+         y="-164.65506" />
+      <text
+         xml:space="preserve"
+         style="font-size:130.60162354px;font-style:normal;font-weight:normal;fill:#000080;fill-opacity:1;stroke:none;font-family:Arial Rounded MT Bold;-inkscape-font-specification:Arial Rounded MT Bold"
+         x="224.82129"
+         y="-55.43737"
+         id="text3749"><tspan
+           sodipodi:role="line"
+           id="tspan3751"
+           x="224.82129"
+           y="-55.43737">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:32.96739197px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Rounded MT Bold;-inkscape-font-specification:Arial Rounded MT Bold"
+         x="205.52917"
+         y="-12.283594"
+         id="text3753"><tspan
+           sodipodi:role="line"
+           id="tspan3755"
+           x="205.52917"
+           y="-12.283594">BUTTON</tspan></text>
+    </g>
+    <g
+       id="g3759-1"
+       transform="matrix(0.33523599,0,0,0.33523599,58.691201,144.9999)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f0f;stroke-width:6.63247919;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect5260-7"
+         width="195.14525"
+         height="178.14395"
+         x="176.59021"
+         y="-164.65506" />
+      <text
+         xml:space="preserve"
+         style="font-size:130.60162354px;font-style:normal;font-weight:normal;fill:#000080;fill-opacity:1;stroke:none;font-family:Arial Rounded MT Bold;-inkscape-font-specification:Arial Rounded MT Bold"
+         x="224.82129"
+         y="-55.43737"
+         id="text3749-4"><tspan
+           sodipodi:role="line"
+           id="tspan3751-0"
+           x="224.82129"
+           y="-55.43737">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:32.96739197px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Rounded MT Bold;-inkscape-font-specification:Arial Rounded MT Bold"
+         x="205.52917"
+         y="-12.283594"
+         id="text3753-9"><tspan
+           sodipodi:role="line"
+           id="tspan3755-4"
+           x="205.52917"
+           y="-12.283594">BUTTON</tspan></text>
+    </g>
+    <g
+       id="g3759-8"
+       transform="matrix(0.33523599,0,0,0.33523599,58.691201,218.50883)"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f0f;stroke-width:6.63247919;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect5260-2"
+         width="195.14525"
+         height="178.14395"
+         x="176.59021"
+         y="-164.65506" />
+      <text
+         xml:space="preserve"
+         style="font-size:130.60162354px;font-style:normal;font-weight:normal;fill:#000080;fill-opacity:1;stroke:none;font-family:Arial Rounded MT Bold;-inkscape-font-specification:Arial Rounded MT Bold"
+         x="224.82129"
+         y="-55.43737"
+         id="text3749-45"><tspan
+           sodipodi:role="line"
+           id="tspan3751-5"
+           x="224.82129"
+           y="-55.43737">C</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:32.96739197px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Rounded MT Bold;-inkscape-font-specification:Arial Rounded MT Bold"
+         x="205.52917"
+         y="-12.283594"
+         id="text3753-1"><tspan
+           sodipodi:role="line"
+           id="tspan3755-7"
+           x="205.52917"
+           y="-12.283594">BUTTON</tspan></text>
+    </g>
+    <path
+       id="rect2947"
+       d="m 146.97995,159.63051 -13.97902,24.21855 -13.97901,24.21854 -13.9986,-24.21854 -13.979011,-24.21855 18.286271,0 0,-80.74155 20.5378,0 0,80.74155 17.11157,0 z"
+       style="fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f0f;stroke-width:3.1325531;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0;fill:#00ff00;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path3968"
+       sodipodi:cx="130.70868"
+       sodipodi:cy="103.30655"
+       sodipodi:rx="76.071609"
+       sodipodi:ry="73.129616"
+       d="m 206.78029,103.30655 a 76.071609,73.129616 0 1 1 -152.14322,0 76.071609,73.129616 0 1 1 152.14322,0 z"
+       inkscape:export-filename="C:\Users\Chris\Desktop\Camera Canvas Icons\PrevUp.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-10,0)" />
+  </g>
+</svg>

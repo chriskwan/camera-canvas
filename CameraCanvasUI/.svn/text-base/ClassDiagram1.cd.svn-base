@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraCanvas.CCButton" Collapsed="true">
+    <Position X="41.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQMVAIAAHAAAAFAKABBICIaCFiCiAQggEAAgoAABAAA=</HashCode>
+      <FileName>CCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.CCFormBackup" Collapsed="true">
+    <Position X="82.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQQACgAgAQAQECAgAAKYABAAAAAAAECAAAAACQ=</HashCode>
+      <FileName>CCFormBackup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.CCMainForm" Collapsed="true">
+    <Position X="84.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HASGMoqskDbVY6AIMBXsuAAGl2URQAPMnnyCRCSKhqk=</HashCode>
+      <FileName>CCMainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.CCToolbar" Collapsed="true">
+    <Position X="2.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CyXTggLY4SBEEoBgAASEagICAAEZBiQNgABQLCQBSQA=</HashCode>
+      <FileName>CCToolbar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.CircularStack&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="87.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAGBBAAAAKACAQAACCAAAAEoAAAAABBCAA=</HashCode>
+      <FileName>CircularStack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CameraCanvas.ColorPicker" Collapsed="true">
+    <Position X="89.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYCABAAACBhADAUIAGhAIQCAEDCIUDQRgBiRASRISA=</HashCode>
+      <FileName>ColorPicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Configuration" Collapsed="true">
+    <Position X="82.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DockTestForm" Collapsed="true">
+    <Position X="86" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAAAAAAKCAAAAICACAEAECgAAAAAAAIAAAAABAAAQ=</HashCode>
+      <FileName>DockTestForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DoubleBufferButton" Collapsed="true">
+    <Position X="41.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAACABAAAAAAAAAAADAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DoubleBufferButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DoubleBufferPanel" Collapsed="true">
+    <Position X="1.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACABAAAAAAAAAAADAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DoubleBufferPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingDisplayControl" Collapsed="true">
+    <Position X="87.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAEIACIAAAAAAACAAAACAAAAAICAAAABBAABBQA=</HashCode>
+      <FileName>DrawingDisplayControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.HistoryImage" Collapsed="true">
+    <Position X="89.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAQAAABMAAAAEAAAAAEAAAQAACAAAAAA=</HashCode>
+      <FileName>HistoryImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Image" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="80.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAIEUEAFGAgAAxRB4JP5ArAWECCEgEAAaQRACkhIAJI=</HashCode>
+      <FileName>ImageClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CameraCanvas.MovementForm" Collapsed="true">
+    <Position X="82.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAASAABAQAIACIAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MovementForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Program" Collapsed="true">
+    <Position X="86" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.SlidingPanel" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJCAQAKioCAgAAKAQkAIgAMSABIAkAgFIgEyIEEAQCI=</HashCode>
+      <FileName>SlidingPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Snapshot" Collapsed="true">
+    <Position X="84.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQAQAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Snapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.sound" Collapsed="true">
+    <Position X="86" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>sound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.SpeedConfigForm" Collapsed="true">
+    <Position X="87.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEBAAAACAAQAQAAACAAgACAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>SpeedConfigForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.TestForm" Collapsed="true">
+    <Position X="89.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EsAoERIeGCAgAAAACoCAAkACBNg4AgAECHENwAAQCAg=</HashCode>
+      <FileName>TestForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.TextEntryControl" Collapsed="true">
+    <Position X="80.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACIAAAAAAACAAAADAAAAAQAAAAQQAAAAAAA=</HashCode>
+      <FileName>TextEntryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.TextEntryForm" Collapsed="true">
+    <Position X="82.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACIAAAAAAACAAAADAAAAAQAAAAQQAAAAACA=</HashCode>
+      <FileName>TextEntryForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ChaseGame" Collapsed="true">
+    <Position X="86" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAKADQIkkSEAEAAEIAGgICACAAAAAQBKAQCAQRgAAAA=</HashCode>
+      <FileName>Toolbar\Config\ChaseGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ChoiceForm" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACACIECCACBAACgCIYAQCiAAAAIIAAQBAAAAAAAQ=</HashCode>
+      <FileName>Toolbar\Config\ChoiceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.PopGame" Collapsed="true">
+    <Position X="84.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gDQAAAIkiCAAIAYAAEGAIBACAAAIAAgJAGAAQTCAIAA=</HashCode>
+      <FileName>Toolbar\Config\PopGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.WelcomeForm" Collapsed="true">
+    <Position X="84.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAEAAAAAECAAhACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Toolbar\Config\WelcomeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.ColorCCButton" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAgAAAAAA=</HashCode>
+      <FileName>DrawingTools\ColorCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.LineThicknessChoiceForm" Collapsed="true">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAmAAAAAAAAg=</HashCode>
+      <FileName>DrawingTools\LineThicknessChoiceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.PencilCCButton" Collapsed="true">
+    <Position X="49" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DrawingTools\PencilCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.ShapesCCButton" Collapsed="true">
+    <Position X="55.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAAAAAAABAAAAAAAAAEgAIAhAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>DrawingTools\ShapesCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.BackspaceCCButton" Collapsed="true">
+    <Position X="60.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawingTools\TextCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.LetterCCButton" Collapsed="true">
+    <Position X="69.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawingTools\TextCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.LetterRangeCCButton" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawingTools\TextCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.DrawingTools.TextCCButton" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawingTools\TextCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.EffectsTools.BrightnessChoiceForm" Collapsed="true">
+    <Position X="1" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAABAAAAAAAAQAAAAAAAAAAAAAAgQAAAAAEAAA=</HashCode>
+      <FileName>EffectsTools\BrightnessCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.EffectsTools.BrightnessCCButton" Collapsed="true">
+    <Position X="31" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EffectsTools\BrightnessCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.EffectsTools.ContrastChoiceForm" Collapsed="true">
+    <Position X="84.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCACAAAAAgAAAAABCAIAAAAAAAAAoAAAAAAAgAAAAA=</HashCode>
+      <FileName>EffectsTools\ContrastCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.EffectsTools.ContrastCCButton" Collapsed="true">
+    <Position X="51.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EffectsTools\ContrastCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.ExitCCButton" Collapsed="true">
+    <Position X="58" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>FileTools\ExitCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.NewCCButton" Collapsed="true">
+    <Position X="62.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAA=</HashCode>
+      <FileName>FileTools\NewCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.DriveListCCButton" Collapsed="true">
+    <Position X="71.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileTools\OpenCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.ImageFileCCButton" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileTools\OpenCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.FolderCCButton" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAIAAAAIAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>FileTools\OpenCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.OpenCCButton" Collapsed="true">
+    <Position X="15.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileTools\OpenCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.FileTools.SaveCCButton" Collapsed="true">
+    <Position X="33.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>FileTools\SaveCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ImageTools.MoveCCButton" Collapsed="true">
+    <Position X="40" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAABAAgAAAAAA=</HashCode>
+      <FileName>ImageTools\MoveCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ImageTools.PasteCCButton" Collapsed="true">
+    <Position X="53.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ImageTools\PasteCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ImageTools.RotateChoiceForm" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAAAgAAAAAAAAAAAAAAAAAAgQAAAAAAAAA=</HashCode>
+      <FileName>ImageTools\RotateCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ImageTools.RotateCCButton" Collapsed="true">
+    <Position X="64.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ImageTools\RotateCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ImageTools.SelectCCButton" Collapsed="true">
+    <Position X="73.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgAAAAAA=</HashCode>
+      <FileName>ImageTools\SelectCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.ImageTools.ZoomCCButton" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAABAACAAAABAIIAAAAAAAAAgAAAAAAgAAAAAA=</HashCode>
+      <FileName>ImageTools\ZoomCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Properties.Resources" Collapsed="true">
+    <Position X="89.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAgAAAAAAEABEAAAIQAAEAAAAAAAAAAAAMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Properties.Settings" Collapsed="true">
+    <Position X="82.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.BackCCButton" Collapsed="true">
+    <Position X="35.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbar\BackCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.MainMenuCCButton" Collapsed="true">
+    <Position X="42.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbar\MainMenuCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.NextCCButton" Collapsed="true">
+    <Position X="17.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Toolbar\NextCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.PrevCCButton" Collapsed="true">
+    <Position X="19.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Toolbar\PrevCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.RedoCCButton" Collapsed="true">
+    <Position X="67" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbar\RedoCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.SelectionCCButton" Collapsed="true">
+    <Position X="76" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAggCAAAAEAAAgAAAAAA=</HashCode>
+      <FileName>Toolbar\SelectionCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.SettingsCCButton" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAIAgAAAAAAAAAAAAAEAAAAAAAggAgCAAA=</HashCode>
+      <FileName>Toolbar\SettingsCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.SlideToButton" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAQAAAAAAAAQAAAEgAAISAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Toolbar\SlideToButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.UndoCCButton" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbar\UndoCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.Config.ButtonSizeChoiceForm" Collapsed="true">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAACAAEAAgQAAAAAAAAAgQAAgAAAAAA=</HashCode>
+      <FileName>Toolbar\Config\ButtonSizeChoiceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.Config.CloseCCButton" Collapsed="true">
+    <Position X="44.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Toolbar\Config\CloseCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.Config.ConfigForm" Collapsed="true">
+    <Position X="80.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAABCgACAAAIAAAACpCAgCFAAAAAAAYAAIAAIAAAA=</HashCode>
+      <FileName>Toolbar\Config\ConfigForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.Config.SlidingSpeedChoiceForm" Collapsed="true">
+    <Position X="10" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAA=</HashCode>
+      <FileName>Toolbar\Config\SlidingSpeedChoiceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbar.Config.ToolbarPlacementForm" Collapsed="true">
+    <Position X="12.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAABgQgAAAAAAAA=</HashCode>
+      <FileName>Toolbar\Config\ToolbarPlacementForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbox.AboutCCButton" Collapsed="true">
+    <Position X="78.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Toolbox\AboutCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbox.AboutForm" Collapsed="true">
+    <Position X="80.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCBAAAQCAACAAIACAAAAgAAACIAAAQBLQAI=</HashCode>
+      <FileName>Toolbox\AboutForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbox.DrawingCCButton" Collapsed="true">
+    <Position X="22" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgAAAgAA=</HashCode>
+      <FileName>Toolbox\DrawingCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbox.EffectsCCButton" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAACAAAEAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbox\EffectsCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbox.FileCCButton" Collapsed="true">
+    <Position X="37.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbox\FileCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCanvas.Toolbox.ImageCCButton" Collapsed="true">
+    <Position X="46.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Toolbox\ImageCCButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="CameraCanvas.ClickEventHandler" Collapsed="true">
+    <Position X="80.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlidingPanel.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="CameraCanvas.SelectEventHandler" Collapsed="true">
+    <Position X="82.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlidingPanel.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/672/branches/chris/CameraCanvasUI
+END
+Config.resx
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Config.resx
+END
+DrawingDisplayControl.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DrawingDisplayControl.Designer.cs
+END
+CCButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCButton.cs
+END
+DrawingDisplayControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DrawingDisplayControl.cs
+END
+TextEntryControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TextEntryControl.resx
+END
+CCToolbar.resx
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCToolbar.resx
+END
+settings_config.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/settings_config.cs
+END
+SpeedConfigForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/SpeedConfigForm.resx
+END
+CameraCanvas.ico
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CameraCanvas.ico
+END
+TextEntryForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TextEntryForm.Designer.cs
+END
+CCMainForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCMainForm.resx
+END
+TextEntryForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TextEntryForm.cs
+END
+toolPanel_old.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/toolPanel_old.cs
+END
+CCFormBackup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCFormBackup.cs
+END
+Snapshot.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Snapshot.cs
+END
+DockTestForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DockTestForm.Designer.cs
+END
+Nini.dll
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Nini.dll
+END
+TestForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TestForm.cs
+END
+HistoryImage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/HistoryImage.cs
+END
+DockTestForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DockTestForm.cs
+END
+Config.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Config.cs
+END
+CCToolbar.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCToolbar.Designer.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Program.cs
+END
+TextEntryControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TextEntryControl.cs
+END
+CCToolbar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCToolbar.cs
+END
+SpeedConfigForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/SpeedConfigForm.Designer.cs
+END
+SpeedConfigForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/SpeedConfigForm.cs
+END
+CCMainForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/669/branches/chris/CameraCanvasUI/CCMainForm.Designer.cs
+END
+CameraCanvasUI.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CameraCanvasUI.csproj
+END
+CCMainForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/671/branches/chris/CameraCanvasUI/CCMainForm.cs
+END
+ccBackup.ico
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/ccBackup.ico
+END
+settings_config.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/settings_config.Designer.cs
+END
+UpgradeLog.XML
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/UpgradeLog.XML
+END
+DoubleBufferPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DoubleBufferPanel.cs
+END
+sound.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/sound.cs
+END
+ColorPicker.resx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/ColorPicker.resx
+END
+MovementForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/MovementForm.resx
+END
+CircularStack.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CircularStack.cs
+END
+ClassDiagram1.cd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/ClassDiagram1.cd
+END
+CCButton.resx
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCButton.resx
+END
+DrawingDisplayControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DrawingDisplayControl.resx
+END
+CCFormBackup.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCFormBackup.Designer.cs
+END
+DoubleBufferButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DoubleBufferButton.cs
+END
+settings_config.resx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/settings_config.resx
+END
+TestForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TestForm.Designer.cs
+END
+Config.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Config.Designer.cs
+END
+TextEntryForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TextEntryForm.resx
+END
+TextEntryControl.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TextEntryControl.Designer.cs
+END
+Configuration.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/Configuration.cs
+END
+ImageClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/ImageClass.cs
+END
+SlidingPanel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/SlidingPanel.cs
+END
+CameraCanvasUI.sln
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CameraCanvasUI.sln
+END
+CCFormBackup.resx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/CCFormBackup.resx
+END
+ColorPicker.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/ColorPicker.Designer.cs
+END
+ColorPicker.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/ColorPicker.cs
+END
+MovementForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/MovementForm.Designer.cs
+END
+MovementForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/MovementForm.cs
+END
+TestForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/TestForm.resx
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/config.ini
+END
+DockTestForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/665/branches/chris/CameraCanvasUI/DockTestForm.resx
+END
