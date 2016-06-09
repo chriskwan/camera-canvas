@@ -4,7 +4,15 @@ Original website: [http://cs-people.bu.edu/ckwan/cameracanvas](http://cs-people.
 
 Original code (now archived): [https://code.google.com/archive/p/cameracanvas](https://code.google.com/archive/p/cameracanvas)
 
+## Contributing
+
+Contribute to Camera Canvas by creating a fork of the repository, making changes there, and then submitting pull requests. For more information, see:
+* [GitHub Tutorial](https://guides.github.com/activities/hello-world/)
+* [How to Fork a Repo](https://help.github.com/articles/fork-a-repo/)
+
 [![Photo editing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop.png) [![A user using Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy33Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy.png) [![Drawing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw.png)
+
+## Authors
 
 [**Christopher Kwan**](http://cs-people.bu.edu/ckwan/) and [**Margrit Betke**](http://www.cs.bu.edu/~betke/)
 
