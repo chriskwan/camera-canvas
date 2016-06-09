@@ -1,9 +1,11 @@
 # **Camera Canvas:** Image Editing Software for People with Disabilities
 
-[![Photo editing in Camera Canvas](HorizontalBigCrop25Percent.png)](HorizontalBigCrop.png) [![A user using Camera Canvas](UserStudy33Percent.png)](UserStudy.png) [![Drawing in Camera Canvas](VerticalSmallDraw25Percent.png)](VerticalSmallDraw.png)
+[![Photo editing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop.png) [![A user using Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy33Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy.png) [![Drawing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw.png)
 
 [**Christopher Kwan**](http://cs-people.bu.edu/ckwan/) and [**Margrit Betke**](http://www.cs.bu.edu/~betke/)
+
 { ckwan, betke } @ cs.bu.edu
+
 [Image and Video Computing Group](http://www.cs.bu.edu/groups/ivc/), [Computer Science Department](http://www.cs.bu.edu/), [Boston University](http://www.bu.edu/)
 
 # About Camera Canvas
@@ -14,7 +16,7 @@ Both programs are completely free. We are constantly working on making them bett
 
 # Downloads
 
-*   [**Camera Canvas** (image editing software) [Windows]](CameraCanvasInstaller.zip) [Last Updated: 03/22/2011]
+*   [**Camera Canvas** (image editing software) [Windows]](http://cs-people.bu.edu/ckwan/cameracanvas/CameraCanvasInstaller.zip) [Last Updated: 03/22/2011]
 *   [**Camera Mouse** (mouse control software) [Windows]](http://cameramouse.bu.edu/)
 
 # Videos
@@ -35,4 +37,4 @@ Drawing Demo:
 
 # Acknowledgements
 
-This research is based upon work supported by the National Science Foundation (NSF) under Grants 0910908, 0855065, 0713229, 0093367\. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+This research is based upon work supported by the National Science Foundation (NSF) under Grants 0910908, 0855065, 0713229, 0093367. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
