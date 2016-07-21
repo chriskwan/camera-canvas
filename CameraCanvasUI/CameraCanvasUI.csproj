@@ -55,6 +55,14 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Hammock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <HintPath>packages\TweetSharp.2.3.1\lib\2.0\Hammock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\TweetSharp.2.3.1\lib\2.0\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Nini, Version=1.1.0.0, Culture=neutral, PublicKeyToken=691faec150a7fa7b, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -75,7 +83,20 @@
     <Compile Include="DrawingTools\ShapesCCButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="EffectsTools\ColorThresholdingCCButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectsTools\ColorThresholdingCCButton.Designer.cs">
+      <DependentUpon>ColorThresholdingCCButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="HistoryImage.cs" />
+    <Compile Include="SocialMediaIntegration\FacebookIntegration.cs" />
+    <Compile Include="SocialMediaIntegration\FacebookIntegrationCCButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialMediaIntegration\FacebookIntegrationCCButton.Designer.cs">
+      <DependentUpon>FacebookIntegrationCCButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Toolbar\SlideToButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -144,9 +165,7 @@
     <Compile Include="EffectsTools\BrightnessCCButton.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EffectsTools\ContrastCCButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="EffectsTools\ContrastCCButton.cs" />
     <Compile Include="FileTools\ExitCCButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -300,6 +319,7 @@
     <None Include="config.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

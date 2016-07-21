@@ -1,9 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCanvasUI", "CameraCanvasUI.csproj", "{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CameraCanvasSetup", "..\CameraCanvasSetup\CameraCanvasSetup.vdproj", "{582BFD7F-1845-4109-8D62-3777745D7160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookIntegration", "..\SocialMediaIntegration\FacebookIntegration.csproj", "{6A94DE89-5CFE-4BF7-9644-A0FB5D2830FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterIntegration", "ConsoleApplication1\TwitterIntegration.csproj", "{05B32099-1F3A-4EC1-AD85-1778BC749678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +23,14 @@ Global
 		{579A1BEB-BB33-4BCD-8E3D-AE475C7C0979}.Release|Any CPU.Build.0 = Release|Any CPU
 		{582BFD7F-1845-4109-8D62-3777745D7160}.Debug|Any CPU.ActiveCfg = Debug
 		{582BFD7F-1845-4109-8D62-3777745D7160}.Release|Any CPU.ActiveCfg = Release
+		{6A94DE89-5CFE-4BF7-9644-A0FB5D2830FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A94DE89-5CFE-4BF7-9644-A0FB5D2830FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A94DE89-5CFE-4BF7-9644-A0FB5D2830FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A94DE89-5CFE-4BF7-9644-A0FB5D2830FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B32099-1F3A-4EC1-AD85-1778BC749678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B32099-1F3A-4EC1-AD85-1778BC749678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B32099-1F3A-4EC1-AD85-1778BC749678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B32099-1F3A-4EC1-AD85-1778BC749678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,8 @@
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\bin\Debug\SocialMediaIntegration.exe.config
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\bin\Debug\SocialMediaIntegration.exe
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\bin\Debug\SocialMediaIntegration.pdb
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\obj\Debug\SocialMediaIntegration.csprojResolveAssemblyReference.cache
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\obj\Debug\SocialMediaIntegration.Properties.Resources.resources
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\obj\Debug\SocialMediaIntegration.csproj.GenerateResource.Cache
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\obj\Debug\SocialMediaIntegration.exe
+C:\Users\Trung Ngo\Programming\camera-canvas\SocialMediaIntegration\obj\Debug\SocialMediaIntegration.pdb
