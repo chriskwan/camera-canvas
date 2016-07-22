@@ -165,12 +165,6 @@
     <Compile Include="ImageTools\RotateCCButton.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CCFormBackup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CCFormBackup.Designer.cs">
-      <DependentUpon>CCFormBackup.cs</DependentUpon>
-    </Compile>
     <Compile Include="ImageTools\SelectCCButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -253,10 +247,6 @@
     <EmbeddedResource Include="CCMainForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>CCMainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CCFormBackup.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>CCFormBackup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovementForm.resx">
       <SubType>Designer</SubType>
