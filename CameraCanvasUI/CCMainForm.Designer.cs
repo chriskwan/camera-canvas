@@ -101,12 +101,10 @@
 
         private System.Windows.Forms.Timer arrowTimer;
         private System.Windows.Forms.Timer msgTimer;
-        //private ToolsSlidingPanel toolsSldPnl;
         private System.Windows.Forms.Timer selectTimer;
         private DoubleBufferPanel imagePanel;
         private System.Windows.Forms.Panel contentPanel;
         private System.Windows.Forms.ToolTip ccToolTip;
-        //private CameraCanvas.DoubleBufferPanel contentPanel;
     }
 }
 

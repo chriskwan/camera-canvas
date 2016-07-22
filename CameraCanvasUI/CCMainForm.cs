@@ -1,32 +1,30 @@
-﻿using System; //for EventArgs
-using System.Collections.Generic; //for List<>
-//using System.ComponentModel;
-//using System.Data;
-using System.Drawing; //for Brush, Color
-//using System.Text;
-//using System.Threading;
-using System.Windows.Forms; //for Form
-using Nini.Config; //for IConfigSource
+﻿using System; // for EventArgs
+using System.Collections.Generic; // for List<>
+using System.Drawing; // for Brush, Color
+using System.Windows.Forms; // for Form
+using Nini.Config; // for IConfigSource
 using CameraCanvas.Toolbar.Config;
 
 namespace CameraCanvas
 {
+    /// <summary>
+    /// The main UI of Camera Canvas
+    /// </summary>
     public partial class CCMainForm : Form
     {
         CCToolbar ccToolbar;
 
-        //configuration stuff
+        // configuration stuff
         ConfigForm configForm;
 
         /* application state */
         public enum CCFormState { Etc, Pasting, Selecting, DrawingWait, Drawing, Moving };
         private CCFormState state = CCFormState.Etc;
 
-        //drawing shapes
+        // drawing shapes
         public enum DrawingShape { Pencil, Line, Rectangle, FilledRectangle, Circle, FilledCircle, Fill };
         private DrawingShape shape = DrawingShape.Pencil;
         private float lineThickness = 5.0f;
-
 
         /* settings */
         string configFile;
@@ -55,7 +53,6 @@ namespace CameraCanvas
             get{return this.state;}
             set{this.state = value;}
         }
-
 
         /// <summary>
         /// Get or set the current drawing shape of the form.
@@ -96,6 +93,9 @@ namespace CameraCanvas
             set { this.defaultFolder = value; }
         }
 
+        /// <summary>
+        /// How 
+        /// </summary>
         int movespeed = 1;
 
         /* image data */
@@ -1139,15 +1139,15 @@ namespace CameraCanvas
         {
             //hide the control box(minimize, maximize, exit)
             //this.ControlBox = false;
-            
+
             //TODO clean this up
 
             //hide this in the beginning and show choice game first
             //this.Visible = false;
-            
-            //Splash Screen
-            //TODO uncomment
-            //hiding for Pathways visit
+
+            // Uncomment to show a Welcome / Splash screen asking users if they want to:
+            // 1. Play a game to customize the UI or
+            // 2. Go to Camera Canvas directly
             //this.Hide();
             //WelcomeForm welcomeForm = new WelcomeForm(this);
             //welcomeForm.Show();
@@ -1166,8 +1166,8 @@ namespace CameraCanvas
             //Console.WriteLine(imageX + "," + imageY);
             drawingOldPoint = new Point(0, 0);
 
-            //make the form always take up the entire screen (not including taskbar)
-            //this nullifies accidental resizing and moving of the window
+            // Make the form always take up the entire screen (not including taskbar),
+            // this nullifies accidental resizing and moving of the window
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.MinimumSize = this.Size;
             this.MaximumSize = this.Size;
@@ -1223,7 +1223,6 @@ namespace CameraCanvas
             }
         }
 
-        //private void resetState()
         public void resetState()
         {
             this.state = CCFormState.Etc;
@@ -1262,8 +1261,6 @@ namespace CameraCanvas
             imagePanel.Invalidate();
         }
 
-
-
         public void updatePastePosition(Point Location)
         {
             //Console.WriteLine("updating paste");
@@ -1301,7 +1298,6 @@ namespace CameraCanvas
         /// Centers on the current image.
         /// </summary>
         public void centerImage()
-        //private void centerImage()
         {
             //TODO BUG if image is larger than the window, the edges will not be shown
             if (null != mainImage)
@@ -1342,7 +1338,6 @@ namespace CameraCanvas
         /// Sets what portion of image is being selected?   
         /// </summary>
         public void initSelection()
-        //void initSelection()
         {
             selectboxes = new List<Point>();
             this.selectboxes.Add(new Point(mainImage.width / 3, mainImage.height / 3));
@@ -1386,14 +1381,18 @@ namespace CameraCanvas
             */
         }
 
+        /// <summary>
+        /// Draw the boxes for displaying messages to the user
+        /// </summary>
+        /// <param name="g"></param>
         void drawMsgBox(Graphics g)
         {
-            //draw message box on the bottom of the screen
+            // Draw message box on the bottom of the screen
             g.FillRectangle(msgbrush, new Rectangle(0, imagePanel.Height - 90, imagePanel.Width, 90));
             SizeF stringsize = g.MeasureString(this.msg, this.msgfont);
             g.DrawString(this.msg, this.msgfont, Brushes.White, (float)((imagePanel.Width - stringsize.Width)/2), (float)(imagePanel.Height - 90));
 
-            //draw message box on the top of the screen too
+            // Draw message box on the top of the screen too
             g.FillRectangle(msgbrush, new Rectangle(0, 0, imagePanel.Width, 90));
             stringsize = g.MeasureString(this.msg, this.msgfont);
             g.DrawString(this.msg, this.msgfont, Brushes.White, (float)((imagePanel.Width - stringsize.Width) / 2), 0.0f);
@@ -1456,7 +1455,6 @@ namespace CameraCanvas
         }
 
         public void takeSnap(string tag)
-        //private void takeSnap(string tag)
         {
             mainImage.takeSnap(tag);
 
