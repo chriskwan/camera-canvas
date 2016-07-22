@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
@@ -8,12 +6,11 @@ using System.IO;
 namespace CameraCanvas
 {
     /// <summary>
-    /// Defines a button on the CCToolbar.
+    /// Defines a button on the Camera Canvas Toolbar (CCToolbar).
     /// </summary>
     public class CCButton : DoubleBufferButton//Button
     {
-        //button appearance members
-        //TODO: these should read from config
+        // TODO: these should read from config
         public const int MIN_WIDTH = 100;//80;
         public const int MIN_HEIGHT = 100;//80;
         public const int MAX_WIDTH = 1000;//200; //TODO: change back, maximums changed for Rick's visit 11/17/2010
@@ -30,14 +27,14 @@ namespace CameraCanvas
 
         private Color unselectedColor = Color.White;
 
-        //dwell clicking members
+        // Dwell-clicking variables
         private int SEC_FOR_DWELL_CLICK = 3;
         private Timer dwellClickTimer;
-        private Label dwellClickTimerLabel;   //displays how many sec left until click
+        private Label dwellClickTimerLabel; // Displays how many sec left until click
         private int secUntilDwellClick;
 
         protected CCToolbar ccToolbar;
-        protected CCMainForm ccMainForm;    //just a shortcut for ccToolbar.CCMainForm
+        protected CCMainForm ccMainForm; // Just a shortcut for ccToolbar.CCMainForm
 
         protected string enabledIconPath;
         protected string disabledIconPath;
@@ -56,7 +53,7 @@ namespace CameraCanvas
         /// </summary>
         public CCButton()
         {
-            //initialize general button appearance
+            // initialize general button appearance
             this.Width = btnWidth;
             this.Height = btnHeight;
             this.BackColor = unclickedColor;//Color.WhiteSmoke;//Color.AntiqueWhite;
@@ -78,7 +75,7 @@ namespace CameraCanvas
 
             //initialize dwell click slideTimer
             dwellClickTimer = new Timer();
-            dwellClickTimer.Interval = 1000; //1 sec
+            dwellClickTimer.Interval = 1000; // 1 second
             
             //TODO turned off for now
             //dwellClickTimer.Tick += new EventHandler(dwellClickTimer_Tick);
@@ -120,7 +117,7 @@ namespace CameraCanvas
             {
                 this.BackColor = btnClickingBrdrColor;
             }
-        }//end CCButton()
+        } // end CCButton()
 
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace CameraCanvas
         public CCButton(CCToolbar ccToolbar) : this()
         {
             this.ccToolbar = ccToolbar;
-            this.ccMainForm = ccToolbar.CCMainForm; //shortcut
+            this.ccMainForm = ccToolbar.CCMainForm; // shortcut
         }
 
 
@@ -265,13 +262,6 @@ namespace CameraCanvas
         {
             this.FlatAppearance.BorderSize = btnClickingBrdrSize;
             this.FlatAppearance.BorderColor = btnClickingBrdrColor;
-            
-            
-            //this.BackColor = this.FlatAppearance.MouseOverBackColor;
-
-            //Graphics g = this.CreateGraphics();
-            //g.DrawEllipse(Pens.Red, 0, 0, 25, 25);
-            //g.Dispose();
         }
 
 
@@ -282,12 +272,8 @@ namespace CameraCanvas
         {
             this.FlatAppearance.BorderSize = btnUnclickedBrdrSize;
             this.FlatAppearance.BorderColor = btnUnclickedBrdrColor;
-            
-            
-            //this.BackColor = this.unselectedColor;
         }
 
-        
         public void FlashOn()
         {
             flashTimer.Start();
@@ -297,7 +283,6 @@ namespace CameraCanvas
         {
             flashTimer.Stop();
         }
-
 
         /// <summary>
         /// On Tick: Every second, decrease seconds left until dwell click
@@ -311,10 +296,10 @@ namespace CameraCanvas
             secUntilDwellClick--;
             dwellClickTimerLabel.Text = "Click in: " + secUntilDwellClick.ToString();
 
-            //enough time for a click
+            // Enough seconds have passed during "dwelling" to register as a click
             if(secUntilDwellClick <= 0)
             {
-                //perform action event
+                // Perform action event
                 stopDwellTimer();
                 
                 dwellClickTimerLabel.Text = "Click!";
@@ -330,10 +315,10 @@ namespace CameraCanvas
 
         protected void OnActionEvent()
         {
-            //check if any subscribers
+            // Check if there any subscribers
             if (actionEvent != null)
             {
-                //call the event
+                // Call the event
                 actionEvent();
             }
         }
@@ -448,7 +433,6 @@ namespace CameraCanvas
             OnActionEvent();
         }
 
-
         /// <summary>
         /// On Mouse Hover: Perform action defined by deriving CCButton.
         /// </summary>
@@ -456,14 +440,12 @@ namespace CameraCanvas
         /// <param name="e"></param>
         public virtual void MouseHoverAction(object sender, EventArgs e) { }
 
-
         /// <summary>
         /// On Mouse Enter: Perform action defined by deriving CCButton.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         public virtual void MouseEnterAction(object sender, EventArgs e) { }
-
 
         /// <summary>
         /// On Mouse Leave: Perform action defined by deriving CCButton.
@@ -475,14 +457,6 @@ namespace CameraCanvas
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
-            // CCButton
-            // 
-            //this.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            //this.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            //this.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            //this.ResumeLayout(false);
-
         }
 
 
