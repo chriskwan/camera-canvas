@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
@@ -9,7 +7,6 @@ using System.Windows.Forms;
 
 namespace CameraCanvas
 {
-    // should implement clonable and enumerable interfaces
     public class Image : ICloneable
     {
         public Bitmap imageBitmap;
@@ -28,7 +25,6 @@ namespace CameraCanvas
         public bool rotInitialized = false;
 
         /* related to paste function */
-
         private Bitmap pasteBuffer;
         private Bitmap pasteBufferAlpha;
         public Point pastePosition;
@@ -55,8 +51,7 @@ namespace CameraCanvas
         private bool effectChanged = false;
 
         public Image()
-        {
-            
+        {            
             imageBitmap = Clipboard.GetImage() as Bitmap;
             this.fileFormat = ImageFormat.Png;
             tempBuffer = new Bitmap(imageBitmap.Width, imageBitmap.Height);
@@ -69,9 +64,7 @@ namespace CameraCanvas
             imagePath = null;
             imageName = name;
 
-
             loaded = true;
-
         }
 
         public Image(int x, int y, string name)
@@ -113,7 +106,6 @@ namespace CameraCanvas
             return cloneImage;
         }
 
-
         public Bitmap getImage()
         {
             return imageBitmap;
@@ -144,6 +136,7 @@ namespace CameraCanvas
                 this.imageHeight = value;
             }
         }
+
         public int zoomedwidth
         {
             get
@@ -174,7 +167,6 @@ namespace CameraCanvas
 
         public bool LoadImage(string fileName)
         {
-
             // use exception to find error
             Bitmap temporary = System.Drawing.Image.FromFile(fileName) as Bitmap;
             imageBitmap = new Bitmap(temporary.Width, temporary.Height);
@@ -288,8 +280,6 @@ namespace CameraCanvas
             g.DrawImage(tempBuffer,
                         new Rectangle(0, 0, targetwidth, targetheight),
                         new Rectangle((int)(-this.imageX), (int)(-this.imageY), (int)(targetwidth / zoom), (int)(targetheight / zoom)), GraphicsUnit.Pixel);
-
-
         }
 
         public Rectangle selectedArea
@@ -301,8 +291,6 @@ namespace CameraCanvas
 
             set
             {
-
-
                 if (value.Width > 0 && value.Height > 0)
                 {
                     selected = new Rectangle((int)(value.X), (int)(value.Y), (int)(value.Width), (int)(value.Height));
@@ -328,23 +316,19 @@ namespace CameraCanvas
 
                 selected.Width = Math.Min(imageWidth - selected.X, selected.Width);
                 selected.Height = Math.Min(imageHeight - selected.Y, selected.Height);
-
-
             }
-
         }
 
         private void drawSelected()
         {
-
             if (selected.Width != 0 && selecting)
             {
                 Graphics g = Graphics.FromImage(tempBuffer);
 
-                //fill a rectangle to show selected area
+                // fill a rectangle to show selected area
                 g.FillRectangle(new SolidBrush(Color.FromArgb(100, Color.LightBlue)), selected);
 
-                //draw outline around select area
+                // draw outline around select area
                 Pen outlinePen = new Pen(Color.Black, 5.0f);
                 outlinePen.DashStyle = DashStyle.DashDot;
                 g.DrawRectangle(outlinePen, selected);
@@ -352,14 +336,12 @@ namespace CameraCanvas
                 outlinePen.Dispose();
                 g.Dispose();
             }
-
         }
 
         public void copyImage()
         {
-            //draw to a temporary image and copy it to clipboard
+            // Draw to a temporary image and copy it to clipboard
             // use dimen selectedRectangle_adjusted
-
             if (selected.Width != 0)
             {
                 Bitmap temporary = new Bitmap(selected.Width, selected.Height);
@@ -367,19 +349,14 @@ namespace CameraCanvas
                 g.DrawImage(imageBitmap, new Rectangle(0, 0, selected.Width, selected.Height), selected, GraphicsUnit.Pixel);
                 g.Dispose();
 
-
                 Clipboard.SetImage(temporary);
 
                 temporary.Dispose();
             }
-
             else
             {
                 copyWholeImage();
             }
-
-            //resetSelection();
-
         }
 
         public void copyWholeImage()
@@ -388,7 +365,6 @@ namespace CameraCanvas
             Graphics g = Graphics.FromImage(temporary);
             g.DrawImage(imageBitmap, new Rectangle(0, 0, imageWidth, imageHeight), new Rectangle(0, 0, imageWidth, imageHeight), GraphicsUnit.Pixel);
             g.Dispose();
-
 
             Clipboard.SetImage(temporary);
 
@@ -415,28 +391,22 @@ namespace CameraCanvas
         {
             Console.WriteLine("do paste!");
 
-            if (!pasting && System.Windows.Forms.Clipboard.ContainsImage())
+            if (!pasting && Clipboard.ContainsImage())
             {
                 pasteBuffer = (Bitmap)Clipboard.GetImage();
-
-                //if (pasteBuffer == null)
-                //{
-                //    //pasteBuffer = new Bitmap(800, 800);
-                //    return;
-                //}
-
                 pasteBufferAlpha = new Bitmap(pasteBuffer.Width, pasteBuffer.Height);
 
                 for (int i = 0; i < pasteBuffer.Height; i++)
+                {
                     for (int j = 0; j < pasteBuffer.Width; j++)
                     {
 
                         pasteBufferAlpha.SetPixel(j, i, Color.FromArgb(150, pasteBuffer.GetPixel(j, i)));
 
                     }
+                }
                 pastePosition = new Point(x, y);
                 pasting = true;
-
             }
             else if (pasting && null != pasteBuffer)
             {
@@ -454,7 +424,6 @@ namespace CameraCanvas
         {
             if (pasting && pasteBufferAlpha != null)
             {
-
                 Graphics g = Graphics.FromImage(tempBuffer);
                 g.DrawImage(pasteBufferAlpha, new Rectangle(pastePosition.X, pastePosition.Y, pasteBuffer.Width, pasteBuffer.Height),
                             new Rectangle(0, 0, pasteBuffer.Width, pasteBuffer.Height), GraphicsUnit.Pixel);
@@ -462,27 +431,13 @@ namespace CameraCanvas
             }
         }
 
-
         public void clearImage()
         {
             Graphics g = Graphics.FromImage(imageBitmap);
-            //            g.DrawRectangle(Pens.White, new Rectangle(0, 0, width, height));
             g.FillRectangle(Brushes.White, new Rectangle(0, 0, width, height));
             g.Dispose();
 
         }
-
-        //public void drawLine(Color linecolor, float width, Point start, Point end)
-        //{
-        //    if (loaded == true)
-        //    {
-        //        Graphics g = Graphics.FromImage((System.Drawing.Image)imageBitmap);
-        //        Pen newpen = new Pen(linecolor, width);
-
-        //        g.DrawLine(newpen, start, end);
-        //        //g.DrawBezier(
-        //    }
-        //}
 
         public void DrawText(string text)
         {
@@ -490,7 +445,7 @@ namespace CameraCanvas
             {
                 Graphics g = Graphics.FromImage((System.Drawing.Image)imageBitmap);
                 
-                //draw text to show in the box
+                // Draw text to show in the box
                 
                 Font font = new Font(FontFamily.GenericSansSerif, 25);
                 SizeF textSize = g.MeasureString(text, font, imageBitmap.Width);
@@ -538,9 +493,8 @@ namespace CameraCanvas
                         g.DrawEllipse(pen, shapeAreaRect);
                         break;
                     case CCMainForm.DrawingShape.Fill:
-                        //TODO
-                        Console.WriteLine("Need to implement Fill");
-                        //
+                        // TODO
+                        Console.WriteLine("Need to implement Fill tool");
                         break;
                     case CCMainForm.DrawingShape.FilledCircle:
                         g.FillEllipse(brush, shapeAreaRect);
@@ -556,10 +510,9 @@ namespace CameraCanvas
                         break;
                     default:
                         break;
-                }//end switch
-            }//end if
+                } // end switch
+            } // end if
         }
-
 
         /// <summary>
         /// Draw Bezier curve: NOT YET IMPLEMENTED
@@ -578,10 +531,8 @@ namespace CameraCanvas
                 Pen newpen = new Pen(linecolor, width);
 
                 g.DrawBezier(newpen, point1, point2, point3, point4);
-                //g.DrawBezier(
             }
         }
-
 
         public void rotate(float amount)
         {
@@ -592,8 +543,6 @@ namespace CameraCanvas
             int b = Math.Abs((int)(imageBitmap.Width / Math.Sin(halfpi) * Math.Sin(halfpi - rad)));
             int c = Math.Abs((int)(imageBitmap.Width / Math.Sin(halfpi) * Math.Sin(rad)));
             int d = Math.Abs((int)(imageBitmap.Height / Math.Sin(halfpi) * Math.Sin(halfpi - rad)));
-
-
 
             Bitmap rotatedBuffer = new Bitmap(a + b, c + d);
             this.tempBuffer = new Bitmap(a + b, c + d);
@@ -617,10 +566,8 @@ namespace CameraCanvas
 
             imageBitmap = rotatedBuffer;
             rotInitialized = false;
-            //this.Invalidate();
             updateDim();
             Console.WriteLine("rotation preview done!");
-
         }
 
         public Bitmap previewRotation(float amount)
@@ -634,7 +581,6 @@ namespace CameraCanvas
                 rotInitialized = true;
             }
 
-
             amount = amount % 360;
             float rad = (amount % 180) * 3.141592f / 180f;
             double halfpi = Math.PI / 2;
@@ -643,14 +589,9 @@ namespace CameraCanvas
             int c = Math.Abs((int)(rotationBuffer.Width / Math.Sin(halfpi) * Math.Sin(rad)));
             int d = Math.Abs((int)(rotationBuffer.Height / Math.Sin(halfpi) * Math.Sin(halfpi - rad)));
 
-
-
             Bitmap rotatedBuffer = new Bitmap(a + b, c + d);
 
             Graphics e = Graphics.FromImage(rotatedBuffer);
-            //e.Clear(SystemColors.ControlDark);
-
-            //e.Clear(Color.White);
 
             Matrix rotMat = new Matrix();
 
@@ -666,10 +607,7 @@ namespace CameraCanvas
 
             Console.WriteLine("rotation preview done!");
 
-
             return rotatedBuffer;
-
-
         }
 
         public void Brighten(int nBrightness)
@@ -690,7 +628,6 @@ namespace CameraCanvas
 
         public void BrightenImage(int nBrightness, Bitmap b)
         {
-            //Bitmap b = this.imageBitmap;
             BitmapData bmData
             = b.LockBits(new Rectangle(0, 0, b.Width, b.Height), ImageLockMode.ReadWrite, PixelFormat.Format24bppRgb);
             int stride = bmData.Stride;
@@ -740,14 +677,12 @@ namespace CameraCanvas
         public void ContrastImage(int nCtr, Bitmap b)
         {
             float ctrP = (float)(nCtr + 100) / 100.0f;
-            //Bitmap b = this.imageBitmap;
             BitmapData bmData
             = b.LockBits(new Rectangle(0, 0, b.Width, b.Height), ImageLockMode.ReadWrite, PixelFormat.Format24bppRgb);
             int stride = bmData.Stride;
-            System.IntPtr Scan0 = bmData.Scan0;
+            IntPtr Scan0 = bmData.Scan0;
             unsafe
             {
-                //int nVal;
                 float pVal;
                 byte* p = (byte*)(void*)Scan0;
                 int nOffset = stride - b.Width * 3;
@@ -790,7 +725,7 @@ namespace CameraCanvas
             //Ref: http://www.c-sharpcorner.com/UploadFile/mahesh/Transformations0512192005050129AM/Transformations05.aspx
             //Ref: http://www.bobpowell.net/negativeimage.htm
             ImageAttributes ia = new ImageAttributes();
-            ColorMatrix cm = new System.Drawing.Imaging.ColorMatrix
+            ColorMatrix cm = new ColorMatrix
             (
                 new float[][]
                 {
@@ -825,7 +760,7 @@ namespace CameraCanvas
         {
             //Ref: http://www.geekpedia.com/tutorial202_Using-the-ColorMatrix-in-Csharp.html
             ImageAttributes ia = new ImageAttributes();
-            ColorMatrix cm = new System.Drawing.Imaging.ColorMatrix
+            ColorMatrix cm = new ColorMatrix
             (
                 new float[][]
                 {
@@ -844,9 +779,6 @@ namespace CameraCanvas
             g.Dispose();
         }
 
-
-
-
         public Point getPicturePoint(Point screenPoint)
         {
             Point picPoint = new Point((int)Math.Floor((screenPoint.X / zoom) - (this.imageX) + 0.5),
@@ -854,36 +786,16 @@ namespace CameraCanvas
 
             Point sp = getScreenPoint(picPoint);
             Graphics g = Graphics.FromImage(imageBitmap);
-            //Console.WriteLine(sp.X + "," + sp.Y);
             g.Dispose();
 
-            //if (picPoint.X < 0 || picPoint.X >= this.imageWidth || picPoint.Y < 0 || picPoint.Y >= this.imageHeight)
-            //{
-            //picPoint.X = Math.Min(imageWidth-1, Math.Max(0, picPoint.X));
-            //picPoint.Y = Math.Min(imageHeight-1, Math.Max(0, picPoint.Y));
             return picPoint;
-            //}
-            //else
-            //{
-            //    return picPoint;
-            //}
         }
 
         public Point getScreenPoint(Point picturePoint)
         {
-            //Console.WriteLine(((picturePoint.X * zoom) + (this.imageX * zoom)) +","+ ((picturePoint.Y * zoom) + (this.imageY * zoom)));
             Point picPoint = new Point((int)((picturePoint.X + this.imageX - 0.5) * zoom),
                                        (int)((picturePoint.Y + this.imageY - 0.5) * zoom));
-            //if (picPoint.X < 0 || picPoint.X >= this.imageWidth || picPoint.Y < 0 || picPoint.Y >= this.imageHeight)
-            //{
-
             return picPoint;
-            //}
-            //else
-            //{
-            //    return picPoint;
-            //}
-
         }
 
         private void redrawTempBuf()
@@ -966,12 +878,12 @@ namespace CameraCanvas
         /// <returns></returns>
         public bool undo()
         {
-            //TODO should undo recenter the image?
+            // TODO should undo recenter the image?
 
-            //Cannot undo if:
-            //1. undoRedoBuffer has not been initialized
-            //2. no undo's are allowed
-            //3. no changes have been made to the image
+            // Cannot undo if:
+            // 1. undoRedoBuffer has not been initialized
+            // 2. no undo's are allowed
+            // 3. no changes have been made to the image
             if (null == undoRedoBuffer || 0 == maxUndo || false == undoRedoBuffer.HasUndos)
             {
                 return false;
@@ -996,7 +908,7 @@ namespace CameraCanvas
                 printHistory();
 
                 return true;
-            }//end else
+            } // end else
         }
 
         /// <summary>
@@ -1014,11 +926,11 @@ namespace CameraCanvas
         /// <returns></returns>
         public bool redo()
         {
-            //TODO delete
-            //Cannot redo if:
-            //1. undoRedoBuffer is not initialized
-            //2. no undoes are allowed
-            //3. no undone changes to redo
+            // TODO delete
+            // Cannot redo if:
+            // 1. undoRedoBuffer is not initialized
+            // 2. no undoes are allowed
+            // 3. no undone changes to redo
             if (null == undoRedoBuffer || 0 == maxUndo || false == undoRedoBuffer.HasRedos)
             {
                 return false;
@@ -1041,21 +953,18 @@ namespace CameraCanvas
                 printHistory();
 
                 return true;
-            }//end else
+            } // end else
         }
 
         public void printHistory()
         {
-
             List<string> histags = undoRedoBuffer.getHistoryTags();
             for (int i = histags.Count - 1; i >= 0; i--)
             {
                 Console.WriteLine("[{0}]", histags[i]);
             }
 
-
             Console.WriteLine("[{0}] <- current", currentTag);
-
 
             List<string> futags = undoRedoBuffer.getFutureTags();
             for (int i = 0; i < futags.Count; i++)
