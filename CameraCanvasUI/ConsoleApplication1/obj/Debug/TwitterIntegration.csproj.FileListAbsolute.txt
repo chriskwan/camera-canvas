@@ -1,0 +1,12 @@
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\Hammock.ClientProfile.dll
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\TweetSharp.dll
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\Hammock.ClientProfile.pdb
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\bin\Debug\TweetSharp.pdb
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Trung Ngo\Programming\camera-canvas\CameraCanvasUI\ConsoleApplication1\obj\Debug\TwitterIntegration.csprojResolveAssemblyReference.cache
