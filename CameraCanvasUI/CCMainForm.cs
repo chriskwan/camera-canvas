@@ -93,9 +93,6 @@ namespace CameraCanvas
             set { this.defaultFolder = value; }
         }
 
-        /// <summary>
-        /// How 
-        /// </summary>
         int movespeed = 1;
 
         /* image data */
