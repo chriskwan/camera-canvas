@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 
@@ -9,10 +8,9 @@ namespace CameraCanvas
     public delegate void ClickEventHandler();
     public delegate void SelectEventHandler();
   
-
     public class SlidingPanel : DoubleBufferPanel
     {
-        private System.Windows.Forms.Timer animateTimer;
+        private Timer animateTimer;
 
         private int iconHeight = 0;
         private int iconWidth = 0;
@@ -22,7 +20,7 @@ namespace CameraCanvas
         public float barPosition;
         private int mouseYbefore = 0;
         private enum AnimationState { Rest, FrameUp, FrameDown };
-        private int frameNumber = 32; //how many frames btn moving? 100 = slow //10 = fast
+        private int frameNumber = 32; // how many frames btn moving? 100 = slow, 10 = fast
         private int currentFrame = 0;
         private int nextIndex = 0;
         private AnimationState state;
@@ -30,6 +28,7 @@ namespace CameraCanvas
         private List<Bitmap> icons;
         private List<Delegate> clickEvent;
         private List<Delegate> selectEvent;
+
         /// <summary>
         /// Is the panel allowed to move?
         /// </summary>
@@ -40,23 +39,21 @@ namespace CameraCanvas
 
         private Pen mypen = new Pen(Color.FromArgb(100, Color.Black), 0);
 
-        //movement speed of the toolbar 
-        //ranges from 0.25f (slowest) to 1.75f (fastest) in increments of 0.25f
+        // Movement speed of the toolbar:
+        // Ranges from 0.25f (slowest) to 1.75f (fastest) in increments of 0.25f
         public float TOOLBAR_MIN_SPEED = 0.25f;
         public float TOOLBAR_MAX_SPEED = 1.75f;
         private float toolbarSpeed = 1.0f;
 
-        //the parent form
+        // The parent form that contains this panel
         protected Form parentForm;
 
-        //needed for derived classes
+        // Needed for derived classes
         protected CCMainForm ccForm; 
 
         public SlidingPanel()
         {
-            //
             // Required for Windows Form Designer support
-            //
             InitializeComponent();
 
             ////trying out some built in double buffering
@@ -64,12 +61,10 @@ namespace CameraCanvas
             //this.SetStyle(ControlStyles.AllPaintingInWmPaint |
             //    ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
 
-            //
             // TODO: Add any constructor code after InitializeComponent call
-            //
-            this.animateTimer = new System.Windows.Forms.Timer();
+            this.animateTimer = new Timer();
             this.animateTimer.Interval = 5;
-            this.animateTimer.Tick += new System.EventHandler(this.animate_tick);
+            this.animateTimer.Tick += new EventHandler(this.animate_tick);
             this.state = AnimationState.Rest;
             this.numIcons = 0;
             //barVel = 0.2f;
@@ -78,13 +73,11 @@ namespace CameraCanvas
             clickEvent = new List<Delegate>();
             selectEvent = new List<Delegate>();
             //LoadIcons(iconList);
-
         }
 
         public SlidingPanel(Form parentForm)
         {
             this.parentForm = parentForm;
-
         }
 
         public SlidingPanel(CCMainForm _ccForm) : this()

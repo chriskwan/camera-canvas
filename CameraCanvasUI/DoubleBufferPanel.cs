@@ -1,32 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 
 namespace CameraCanvas
 {
-    public class DoubleBufferPanel : System.Windows.Forms.Panel
+    /// <summary>
+    /// Panel that uses the double buffering graphics technique to reduce flicker during animation
+    /// All changes are first drawn to a back buffer that is swapped with the buffer that the user sees
+    /// </summary>
+    public class DoubleBufferPanel : Panel
     {
-
         public Bitmap _backBuffer;
-
 
         public DoubleBufferPanel()
         {
-            //
             // Required for Windows Form Designer support
-            //
             InitializeComponent();
-            //
+
             // TODO: Add any constructor code after InitializeComponent call
-            //
             //this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.AllPaintingInWmPaint |
             ControlStyles.UserPaint |
             ControlStyles.OptimizedDoubleBuffer, true);
             this.UpdateStyles();
         }
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -34,6 +32,7 @@ namespace CameraCanvas
         {
             base.Dispose(disposing);
         }
+
         /// <summary>
         /// On Paint event
         /// </summary>
@@ -43,21 +42,19 @@ namespace CameraCanvas
 
             if (_backBuffer == null)
             {
-                //TODO BUG 
-                //Argument Exception was unhandled
+                // TODO BUG 
+                // Argument Exception was unhandled
                 _backBuffer = new Bitmap(this.ClientSize.Width, this.ClientSize.Height);
             }
+
             /* draw the backbuffer to the screen */
             //e.Graphics.Clear(SystemColors.ControlDark);
             //e.Graphics.Clear(this.BackColor);
             e.Graphics.DrawImageUnscaled(_backBuffer, 0, 0);
-            
         }
 
-        
         //this was empty before
         //so it overrode the OnPaintBackground by drawing nothing!
-
         //protected override void OnPaintBackground(PaintEventArgs e)
         //{
 
@@ -67,7 +64,6 @@ namespace CameraCanvas
         {
             if (_backBuffer != null)
             {
-
                 _backBuffer.Dispose();
 
                 _backBuffer = null;
@@ -80,7 +76,6 @@ namespace CameraCanvas
         {
             if (_backBuffer == null)
             {
-
                 _backBuffer = new Bitmap(this.ClientSize.Width, this.ClientSize.Height);
 
             }

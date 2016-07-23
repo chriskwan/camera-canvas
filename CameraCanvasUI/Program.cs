@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CameraCanvas
@@ -7,13 +6,11 @@ namespace CameraCanvas
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// The main entry point for the CameraCanvas application.
         /// </summary>
         [STAThread]
         static void Main(string[] args)
         {
-            
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             if (args.Length > 0)
@@ -30,21 +27,17 @@ namespace CameraCanvas
                         //Config is missing!
                         //Application.Run(new Config("config.ini")); 
                     }
-
                 }
                 else
                 {
                     Console.WriteLine(args[0]);
                     Application.Run(new CCMainForm(args[0]));
                 }
-                
             }
             else
             {
                 Application.Run(new CCMainForm("config.ini"));
-                //Application.Run(new ChaseGame(new CCMainForm("config.ini")));
             }
-            
         }
     }
 }
