@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
@@ -8,12 +6,11 @@ using System.IO;
 namespace CameraCanvas
 {
     /// <summary>
-    /// Defines a button on the CCToolbar.
+    /// Defines a button on the Camera Canvas Toolbar (CCToolbar).
     /// </summary>
     public class CCButton : DoubleBufferButton//Button
     {
-        //button appearance members
-        //TODO: these should read from config
+        // TODO: these should read from config
         public const int MIN_WIDTH = 100;//80;
         public const int MIN_HEIGHT = 100;//80;
         public const int MAX_WIDTH = 1000;//200; //TODO: change back, maximums changed for Rick's visit 11/17/2010
@@ -30,14 +27,14 @@ namespace CameraCanvas
 
         private Color unselectedColor = Color.White;
 
-        //dwell clicking members
+        // Dwell-clicking variables
         private int SEC_FOR_DWELL_CLICK = 3;
         private Timer dwellClickTimer;
-        private Label dwellClickTimerLabel;   //displays how many sec left until click
+        private Label dwellClickTimerLabel; // Displays how many sec left until click
         private int secUntilDwellClick;
 
         protected CCToolbar ccToolbar;
-        protected CCMainForm ccMainForm;    //just a shortcut for ccToolbar.CCMainForm
+        protected CCMainForm ccMainForm; // Just a shortcut for ccToolbar.CCMainForm
 
         protected string enabledIconPath;
         protected string disabledIconPath;
@@ -56,7 +53,7 @@ namespace CameraCanvas
         /// </summary>
         public CCButton()
         {
-            //initialize general button appearance
+            // initialize general button appearance
             this.Width = btnWidth;
             this.Height = btnHeight;
             this.BackColor = unclickedColor;//Color.WhiteSmoke;//Color.AntiqueWhite;
@@ -78,7 +75,7 @@ namespace CameraCanvas
 
             //initialize dwell click slideTimer
             dwellClickTimer = new Timer();
-            dwellClickTimer.Interval = 1000; //1 sec
+            dwellClickTimer.Interval = 1000; // 1 second
             
             //TODO turned off for now
             //dwellClickTimer.Tick += new EventHandler(dwellClickTimer_Tick);
@@ -120,7 +117,7 @@ namespace CameraCanvas
             {
                 this.BackColor = btnClickingBrdrColor;
             }
-        }//end CCButton()
+        } // end CCButton()
 
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace CameraCanvas
         public CCButton(CCToolbar ccToolbar) : this()
         {
             this.ccToolbar = ccToolbar;
-            this.ccMainForm = ccToolbar.CCMainForm; //shortcut
+            this.ccMainForm = ccToolbar.CCMainForm; // shortcut
         }
 
 
@@ -159,8 +156,6 @@ namespace CameraCanvas
             this.SetIcon(enabledIconPath);
         }
 
-
-
         /// <summary>
         /// Construct a CCButton given the CCToolbar, its text, 
         /// the path of its icon (when enabled), and path of its icon (when disabled).
@@ -185,30 +180,29 @@ namespace CameraCanvas
 
             if (File.Exists(enabledIconPath))
             {
-                //create a copy of the icon image to use as the background image
-                //if we don't do this, the original image is locked and cannot be saved
-                //bug fix thanks to: http://blog.vishalon.net/index.php/bitmapsave-a-generic-error-occurred-in-gdi/
+                // Create a copy of the icon image to use as the background image
+                // if we don't do this, the original image is locked and cannot be saved
+                // bug fix thanks to: http://blog.vishalon.net/index.php/bitmapsave-a-generic-error-occurred-in-gdi/
                 Bitmap iconImage = new Bitmap(enabledIconPath);
                 Bitmap tempImage = new Bitmap(iconImage.Width, iconImage.Height);
 
-                //copy contents of icon image to the new image
+                // Copy contents of icon image to the new image
                 Graphics g = Graphics.FromImage(tempImage);
                 g.DrawImage(iconImage, 0, 0, iconImage.Width, iconImage.Height);
                 g.Dispose();
 
-                //release the lock on the old image
+                // Release the lock on the old image
                 iconImage.Dispose();
 
-                //point the icon image reference to our new image
+                // Point the icon image reference to our new image
                 iconImage = tempImage;
 
                 this.BackgroundImage = iconImage;
 
-                //since button has an image, we don't need the text
+                // Since button has an image, we don't need the text
                 this.Text = "";
             }
         }
-
 
         /// <summary>
         /// Set the Text property and Tooltip for the button.
@@ -218,9 +212,9 @@ namespace CameraCanvas
         {
             this.Text = text;
 
-            //remove '&' (Alt-key function) from Text and make into Tooltip
+            // Remove '&' (Alt-key function) from Text and make into Tooltip
             string toolTipString = text;
-            //windows uses the last '&' as the Alt-key function
+            // Windows uses the last '&' as the Alt-key function
             int ampersandIndex = toolTipString.LastIndexOf('&');
             if (ampersandIndex >= 0)
             {
@@ -228,7 +222,6 @@ namespace CameraCanvas
             }
             ccMainForm.CCToolTip.SetToolTip(this, toolTipString);
         }
-
 
         /// <summary>
         /// Enable the button for clicking.
@@ -243,7 +236,6 @@ namespace CameraCanvas
             }
         }
 
-
         /// <summary>
         /// Disable the button from being clicked.
         /// </summary>
@@ -257,7 +249,6 @@ namespace CameraCanvas
             }
         }
 
-
         /// <summary>
         /// Mark this button as being selected.
         /// </summary>
@@ -265,15 +256,7 @@ namespace CameraCanvas
         {
             this.FlatAppearance.BorderSize = btnClickingBrdrSize;
             this.FlatAppearance.BorderColor = btnClickingBrdrColor;
-            
-            
-            //this.BackColor = this.FlatAppearance.MouseOverBackColor;
-
-            //Graphics g = this.CreateGraphics();
-            //g.DrawEllipse(Pens.Red, 0, 0, 25, 25);
-            //g.Dispose();
         }
-
 
         /// <summary>
         /// Mark this button as being unselected.
@@ -282,12 +265,8 @@ namespace CameraCanvas
         {
             this.FlatAppearance.BorderSize = btnUnclickedBrdrSize;
             this.FlatAppearance.BorderColor = btnUnclickedBrdrColor;
-            
-            
-            //this.BackColor = this.unselectedColor;
         }
 
-        
         public void FlashOn()
         {
             flashTimer.Start();
@@ -297,7 +276,6 @@ namespace CameraCanvas
         {
             flashTimer.Stop();
         }
-
 
         /// <summary>
         /// On Tick: Every second, decrease seconds left until dwell click
@@ -311,10 +289,10 @@ namespace CameraCanvas
             secUntilDwellClick--;
             dwellClickTimerLabel.Text = "Click in: " + secUntilDwellClick.ToString();
 
-            //enough time for a click
+            // Enough seconds have passed during "dwelling" to register as a click
             if(secUntilDwellClick <= 0)
             {
-                //perform action event
+                // Perform action event
                 stopDwellTimer();
                 
                 dwellClickTimerLabel.Text = "Click!";
@@ -330,14 +308,13 @@ namespace CameraCanvas
 
         protected void OnActionEvent()
         {
-            //check if any subscribers
+            // Check if there any subscribers
             if (actionEvent != null)
             {
-                //call the event
+                // Call the event
                 actionEvent();
             }
         }
-
 
         /// <summary>
         /// On Mouse Enter: Restart slideTimer in prep for a new dwell click.
@@ -350,8 +327,8 @@ namespace CameraCanvas
 
             MarkAsSelected();
 
-            //TODO remove?
-            //stop the automatic sliding slideTimer so toolbar does not slide when user is trying to click
+            // TODO remove?
+            // Stop the automatic sliding slideTimer so toolbar does not slide when user is trying to click
             if (ccToolbar != null)
             {
                 ccToolbar.StopAutomaticSliding();
@@ -384,14 +361,13 @@ namespace CameraCanvas
 
             this.MarkAsUnselected();   
 
-            //TODO remove?
-            //resume automatic sliding if not trying to click
+            // TODO remove?
+            // Resume automatic sliding if not trying to click
             if (ccToolbar != null)
             {
                 ccToolbar.StartAutomaticSliding();
             }
         }
-
 
         private void stopDwellTimer()
         {
@@ -399,7 +375,6 @@ namespace CameraCanvas
 
             dwellClickTimerLabel.Hide();
         }
-
 
         /// <summary>
         /// On Click: Update label and slideTimer to signify that a click event has occurred
@@ -409,14 +384,14 @@ namespace CameraCanvas
         /// <param name="e"></param>
         private void CCButton_Click(object sender, EventArgs e)
         {
-            //Give visual feedback that a click has occured
+            // Give visual feedback that a click has occured
             //dwellClickTimerLabel.Text = "Click!";
             this.FlatAppearance.BorderColor = btnClickedBrdrColor;
             //dwellClickTimerLabel.Show();
             //this.Refresh();
 
-            //TODO: play a sound here
-            //commented out b/c its kind of annoying
+            // TODO: play a sound here
+            // Commented out b/c its kind of annoying
             //ccMainForm.getWavPlayer().Play(@"wav\click.wav");
 
             //restart slideTimer after the click
@@ -435,7 +410,6 @@ namespace CameraCanvas
             }
         }
 
-
         /// <summary>
         /// On Click: Perform action defined by deriving CCButton.
         /// NOTE: Overridding methods should NOT call this base method
@@ -448,7 +422,6 @@ namespace CameraCanvas
             OnActionEvent();
         }
 
-
         /// <summary>
         /// On Mouse Hover: Perform action defined by deriving CCButton.
         /// </summary>
@@ -456,14 +429,12 @@ namespace CameraCanvas
         /// <param name="e"></param>
         public virtual void MouseHoverAction(object sender, EventArgs e) { }
 
-
         /// <summary>
         /// On Mouse Enter: Perform action defined by deriving CCButton.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         public virtual void MouseEnterAction(object sender, EventArgs e) { }
-
 
         /// <summary>
         /// On Mouse Leave: Perform action defined by deriving CCButton.
@@ -475,17 +446,8 @@ namespace CameraCanvas
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
-            // CCButton
-            // 
-            //this.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            //this.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            //this.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            //this.ResumeLayout(false);
-
         }
 
+    } // end class
 
-    }//end class
-
-}//end namespace
+} // end namespace

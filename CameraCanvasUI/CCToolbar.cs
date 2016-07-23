@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using CameraCanvas.Toolbar;
 
@@ -13,8 +10,7 @@ namespace CameraCanvas
     /// Defines a CCToolbar (Camera Canvas Toolbar).
     /// </summary>
     public partial class CCToolbar : DoubleBufferPanel
-    {
-        
+    {        
         /// <summary>
         /// Defines possible orientations for the CCToolbar.
         /// </summary>
@@ -23,11 +19,8 @@ namespace CameraCanvas
             HorizontalTop,
             VerticalRight,
             HorizontalBottom,
-            VerticalLeft//,
-            //DiagonalLeftUp,
-            //DiagonalLeftDown
+            VerticalLeft
         }
-
 
         /// <summary>
         /// Defines possible directions that the CCToolbar can slide
@@ -39,13 +32,12 @@ namespace CameraCanvas
             Next
         }
 
-
         private Form ccMainForm;
 
         private ToolbarOrientation orientation = ToolbarOrientation.HorizontalTop;
 
-        //toolbar buttons
-        private DoubleBufferPanel toolbarButtonsPanel; //for the buttons on the toolbar
+        // Toolbar buttons
+        private DoubleBufferPanel toolbarButtonsPanel; // container for the buttons on the toolbar
         private int toolbarButtonsIndex = 0;
         private Stack<int> prevToolbarIndex;
         private List<CCButton> toolbarButtons;
@@ -53,18 +45,17 @@ namespace CameraCanvas
         private Label toolbarLabel; 
         private Stack<string> prevToolbarLabels;
 
-        //main menu buttons
+        // Main menu buttons
         public CCButton fileCCButton;
         public CCButton imageCCButton;
         public CCButton drawingCCButton;
         public CCButton settingsCCButton;
         public CCButton aboutCCButton;
 
-        //navigation buttons
-        private DoubleBufferPanel navButtonsPanel; //for grouping standard buttons together
-        private PrevCCButton prevCCBtn; //ie: left/up/left-diagonal
-        //private SelectionCCButton selectionCCButton;
-        private NextCCButton nextCCBtn; //ie: right/down/right-diagonal
+        // Navigation buttons
+        private DoubleBufferPanel navButtonsPanel; // for grouping standard buttons together
+        private PrevCCButton prevCCBtn; // ie: left / up
+        private NextCCButton nextCCBtn; //ie: right / down
         private BackCCButton backCCBtn;
         private SettingsCCButton settingsCCBtn;
         private MainMenuCCButton mainMenuCCBtn;
@@ -110,19 +101,17 @@ namespace CameraCanvas
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             this.BringToFront();
-            
-            //re-center the toolbar when its size changes
+
+            // Re-center the toolbar (reset the button scrolling) when its size changes
             this.SizeChanged += new EventHandler(OnResizeCenterToolbar);
 
             SetToolbarDockLocation();
 
             InitializeAllToolbarItems();
 
-
-
             ShowMoreArrows();
 
-            //initialize auto slide slideTimer
+            // Initialize auto slide slideTimer
             autoSlideTimer = new Timer();
             autoSlideTimer.Interval = autoSlideInterval;
             autoSlideTimer.Tick += new EventHandler(autoSlideTimer_Tick);
@@ -174,7 +163,6 @@ namespace CameraCanvas
                 }
                 else
                 {
-                    //this.Controls.Remove(morePrevBtn);
                     morePrevBtn.Hide();
                 }
 
@@ -191,13 +179,10 @@ namespace CameraCanvas
                 }
                 else
                 {
-                    //this.Controls.Remove(moreNextBtn);
                     moreNextBtn.Hide();
                 }
-
             }
         }
-
 
         /// <summary>
         /// On Tick: Automatically slide toolbar towards prev or next depending on
@@ -220,7 +205,6 @@ namespace CameraCanvas
             }
         }
 
-
         /// <summary>
         /// Get or set automatic sliding.
         /// </summary>
@@ -230,9 +214,8 @@ namespace CameraCanvas
             set { this.autoSlide = value; }
         }
 
-
         /// <summary>
-        /// Turn On automatic sliding of the toolbar.
+        /// Turn on automatic sliding of the toolbar.
         /// </summary>
         public void StartAutomaticSliding()
         {
@@ -249,13 +232,12 @@ namespace CameraCanvas
         }
 
         /// <summary>
-        /// Turn Off automatic sliding of the toolbar.
+        /// Turn off automatic sliding of the toolbar.
         /// </summary>
         public void StopAutomaticSliding()
         {
             autoSlideTimer.Stop();
         }
-
 
         /// <summary>
         /// Get or set the interval of the autoslidetimer
@@ -285,8 +267,6 @@ namespace CameraCanvas
             ChangeOrientation(orientation);
         }
 
-
-        //TODO figure out casting
         /// <summary>
         /// Get the form that the toolbar is inside of.
         /// </summary>
@@ -338,12 +318,10 @@ namespace CameraCanvas
             get { return this.buttonWidth; }
         }
 
-
         public int ButtonHeight
         {
             get { return this.buttonHeight; }
         }
-
 
         /// <summary>
         /// Get the toolbar's orientation.
@@ -353,7 +331,6 @@ namespace CameraCanvas
             get { return orientation; }
             set { orientation = value; }
         }
-
 
         /// <summary>
         /// Set the Dock property of the toolbar based on its orientation.
@@ -379,7 +356,6 @@ namespace CameraCanvas
             }
         }
 
-
         /// <summary>
         /// Initialize everything on the toolbar.
         /// </summary>
@@ -390,8 +366,6 @@ namespace CameraCanvas
             InitializeToolbarButtons();
             AddMainMenuButtons();
         }
-
-       
 
         /// <summary>
         /// Initialize label on top of the toolbar.
@@ -410,16 +384,14 @@ namespace CameraCanvas
             SetToolbarLabelLocation();
         }
 
-
         /// <summary>
         /// Set the location of the toolbar label based on the toolbar's orientation.
         /// </summary>
         private void SetToolbarLabelLocation()
         {
-            //for now all orientations have label at the top
+            // For now, all orientations have label at the top
             toolbarLabel.Location = new Point(0, 0);
         }
-
 
         /// <summary>
         /// Initialize the toolbar buttons.
@@ -443,7 +415,6 @@ namespace CameraCanvas
 
             SetToolbarButtonsPanelLocation();
         }
-
 
         /// <summary>
         /// Set the location of the toolbar buttons panel based on the toolbar's orientation.
@@ -478,7 +449,6 @@ namespace CameraCanvas
             toolbarButtonsPanel.Location = new Point(toolbarButtonsPanelX, toolbarButtonsPanelY);
         }
 
-
         /// <summary>
         /// Initialize and add the navigation buttons to the toolbar.
         /// </summary>
@@ -494,13 +464,13 @@ namespace CameraCanvas
 
             SetNavButtonsPanelLocation();
 
-            prevCCBtn = new PrevCCButton(this); //ie: left/up/left-diagonal
-            nextCCBtn = new NextCCButton(this); //ie: right/down/right-diagonal
+            prevCCBtn = new PrevCCButton(this); // ie: left / up
+            nextCCBtn = new NextCCButton(this); // ie: right / down
             backCCBtn = new BackCCButton(this);
             settingsCCBtn = new SettingsCCButton(this);
             mainMenuCCBtn = new MainMenuCCButton(this);
 
-            //actually draw the buttons in the panel
+            // Actually draw the buttons in the panel
             AddNavButtonsToPanel();
         }
 
@@ -516,18 +486,18 @@ namespace CameraCanvas
             {
                 case ToolbarOrientation.HorizontalTop:
                     navButtonsPanelX = 0;
-                    navButtonsPanelY = toolbarLabel.Height + buttonHeight + SPACE_BTWN_BTNS; //under tool btns
+                    navButtonsPanelY = toolbarLabel.Height + buttonHeight + SPACE_BTWN_BTNS; // under tool btns
                     break;
                 case ToolbarOrientation.HorizontalBottom:
                     navButtonsPanelX = 0;
-                    navButtonsPanelY = toolbarLabel.Height; //under label, above tool btns
+                    navButtonsPanelY = toolbarLabel.Height; // under label, above tool btns
                     break;
                 case ToolbarOrientation.VerticalLeft:
-                    navButtonsPanelX = buttonWidth + SPACE_BTWN_BTNS; //right of tool btns
+                    navButtonsPanelX = buttonWidth + SPACE_BTWN_BTNS; // right of tool btns
                     navButtonsPanelY = 0;
                     break;
                 case ToolbarOrientation.VerticalRight:
-                    navButtonsPanelX = 0; //left of tool btns
+                    navButtonsPanelX = 0; // left of tool btns
                     navButtonsPanelY = 0;
                     break;
                 default:
@@ -537,22 +507,20 @@ namespace CameraCanvas
             navButtonsPanel.Location = new Point(navButtonsPanelX, navButtonsPanelY);
         }
 
-
         /// <summary>
         /// Add navigation buttons to the toolbar.
         /// </summary>
         private void AddNavButtonsToPanel()
         {
-            //clear out controls in case orientation was just changed and buttons are re-added
+            // Clear out controls in case orientation was just changed and buttons are re-added
             navButtonsPanel.Controls.Clear(); 
 
             AddNavButtonToPanelAtIndex(backCCBtn, 0);
             AddNavButtonToPanelAtIndex(prevCCBtn, 1);
-            //index 2 left empty for resting space
+            // Index 2 is left empty to give users some resting space
             AddNavButtonToPanelAtIndex(nextCCBtn, 3);
             AddNavButtonToPanelAtIndex(mainMenuCCBtn, 4);
         }
-
 
         /// <summary>
         /// Helper method: Add a navigation button to the toolbar at a given index.
@@ -582,7 +550,6 @@ namespace CameraCanvas
             navButtonsPanel.Controls.Add(navButton);
         }
 
-
         /// <summary>
         /// Add the MainMenu buttons to the toolbar.
         /// </summary>
@@ -605,16 +572,15 @@ namespace CameraCanvas
             AddNewToolbarButtons(mainMenuButtons, "Main Menu");
         }
 
-
         /// <summary>
         /// Add a list of buttons to the toolbar.
         /// </summary>
         /// <param name="buttons"></param>
         private void AddButtonsToToolbar(List<CCButton> buttons)
         {
-            //use a double-buffering like method 
-            //to reduce screen twich when changing buttons
-            //create a copy of the toolbar panel to put the new buttons on
+            // Use a double-buffering like method 
+            // to reduce screen twitch when changing buttons
+            // - create a copy of the toolbar panel to put the new buttons on
             DoubleBufferPanel tempPanel = new DoubleBufferPanel();
             tempPanel.Location = toolbarButtonsPanel.Location;
             tempPanel.Size = toolbarButtonsPanel.Size;
@@ -622,12 +588,12 @@ namespace CameraCanvas
             tempPanel.AutoSizeMode = toolbarButtonsPanel.AutoSizeMode;
             tempPanel.BackColor = toolbarButtonsPanel.BackColor;
 
-            //add new buttons to the copy panel
+            // Add new buttons to the copy panel
             for (int i = 0; i < buttons.Count; i++)
             {
                 CCButton currentButton = buttons[i];
 
-                //make sure button is the current desired size
+                // Make sure button is the current desired size
                 currentButton.Width = buttonWidth;
                 currentButton.Height = buttonHeight;
 
@@ -657,37 +623,35 @@ namespace CameraCanvas
                 tempPanel.Controls.Add(currentButton);
             }
 
-            //swap the toolbar panel and the copy
-            //order of operations is very important
+            // Swap the toolbar panel and the copy
+            // -- the order of operations is very important
             this.Controls.Add(tempPanel);
             toolbarButtonsPanel.Hide();
             toolbarButtonsPanel.Controls.Clear();
             toolbarButtonsPanel = tempPanel;
             
-            //reset toolbar panel with starting settings
-            //since this is a new set of buttons
+            // Reset toolbar panel with starting settings
+            // since this is a new set of buttons
             SetToolbarButtonsPanelLocation();
             toolbarButtonsIndex = 0;
             lastSlideDirection = SlideDirection.Next;
             CenterizeToolbar();
         }
 
-
         /// <summary>
-        /// Re-center the toolbar in relation to the window,
+        /// Re-center the toolbar in relation to the window
         /// wrapper to give to event handler.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void OnResizeCenterToolbar(object sender, EventArgs e)
         {
-            //center the toolbar panel to the screen
+            // Center the toolbar panel to the screen
             CenterizeToolbar();
 
-            //slide the toolbar buttons over so the middle button is in the center
+            // Slide the toolbar buttons over so the middle button is in the center
             this.SlideToolbarButtonsToCenter();
         }
-
 
         /// <summary>
         /// Re-center the toolbar in relation to the window.
@@ -696,7 +660,7 @@ namespace CameraCanvas
         /// <param name="e"></param>
         private void CenterizeToolbar()
         {
-            //freeze the layout engine so user does not see ugly intermiate state
+            // Freeze the layout engine so user does not see an ugly intermediate state
             this.SuspendLayout();
 
             if (orientation == ToolbarOrientation.HorizontalTop
@@ -704,14 +668,13 @@ namespace CameraCanvas
             {
                 int windowHorizMidpt = this.ClientSize.Width / 2;
                 
-                //before updating each control's location we hide the control
-                //since layout engine is frozen, user will still see old version
-
+                // Before updating each control's location, we hide the control
+                // since layout engine is frozen, user will still see old version
                 toolbarLabel.Hide();
                 toolbarLabel.Left = windowHorizMidpt - toolbarLabel.Width / 2;
                 toolbarLabel.Show();
 
-                //align start of toolbar buttons with space in between prev and next arrows
+                // Align start of toolbar buttons with space in between prev and next arrows
                 toolbarButtonsPanel.Hide();
                 toolbarButtonsPanel.Left = (windowHorizMidpt - (int)(0.5 * buttonWidth));
                 toolbarButtonsIndex = 0;
@@ -728,14 +691,13 @@ namespace CameraCanvas
                 int windowVertMidpt = this.ClientSize.Height / 2;
                 int windowHorizMidpt = this.ClientSize.Width / 2;
 
-                //before updating each control's location we hide the control
-                //since layout engine is frozen, user will still see old version
-
+                // Before updating each control's location we hide the control
+                // since layout engine is frozen, user will still see old version
                 toolbarLabel.Hide();
                 toolbarLabel.Left = windowHorizMidpt - toolbarLabel.Width / 2;
                 toolbarLabel.Show();
                 
-                //align start of toolbar buttons with space in between prev and next arrows
+                // Align start of toolbar buttons with space in between prev and next arrows
                 toolbarButtonsPanel.Hide();
                 toolbarButtonsPanel.Top = windowVertMidpt - (int)(0.5 * buttonHeight);
                 toolbarButtonsIndex = 0;
@@ -749,42 +711,40 @@ namespace CameraCanvas
             //TODO refactor
             this.ShowMoreArrows();
             
-            //unfreeze layout engine and show user updated toolbar
+            // Unfreeze layout engine and show user updated toolbar
             this.ResumeLayout();
         }
-
 
         /// <summary>
         /// Redraw everything on the toolbar.
         /// </summary>
         private void RedrawToolbar()
         {
-            //freeze the parent form's layout engine
-            //so user does not see ugly intermediate state
-            //we freeze the parent because we may be changing the dock location
+            // Freeze the parent form's layout engine
+            // so user does not see ugly intermediate state
+            // we freeze the parent because we may be changing the dock location
             this.Parent.SuspendLayout();
             
-            //redraw the toolbar behind the scenes:
+            // Redraw the toolbar behind the scenes:
             
-            //update the locations of all the controls
+            // Update the locations of all the controls
             SetToolbarDockLocation();
             SetToolbarLabelLocation();
             SetNavButtonsPanelLocation();
             SetToolbarButtonsPanelLocation();
 
-            //add the buttons back to panels with possibly updated properties
+            // Add the buttons back to panels with possibly updated properties
             AddNavButtonsToPanel();
             AddButtonsToToolbar(this.toolbarButtons);
 
-            //change in properties may cause toolbar to be off-center
+            // Re-center because change in properties may have caused toolbar to be off-center
             CenterizeToolbar();
 
             UpdateDrawingDisplayPanelLocation();
 
-            //unfreeze the layout engine and let user see redrawn toolbar
+            // Unfreeze the layout engine and let user see redrawn toolbar
             this.Parent.ResumeLayout();
         }
-
 
         /// <summary>
         /// Change the orientation of the toolbar to a new orientation.
@@ -792,19 +752,19 @@ namespace CameraCanvas
         /// <param name="newOrientation"></param>
         public void ChangeOrientation(ToolbarOrientation newOrientation)
         {
-            //don't bother changing if newOrientation is the same as current
+            // Don't bother changing if newOrientation is the same as current
             if (newOrientation != this.orientation)
             {
                 this.orientation = newOrientation;
 
                 RedrawToolbar();
 
-                //arrows may need to point in a different direction now
+                // Arrows may need to point in a different direction now
                 prevCCBtn.UpdateImage();
                 nextCCBtn.UpdateImage();
 
-                //image may need to be recentered in screen since toolbar moved
-                //TODO refactor
+                // Image may need to be recentered in screen since toolbar moved
+                // TODO refactor
                 //((CCMainForm)ccMainForm).resetState();
                 this.CCMainForm.centerImage();
                 this.CCMainForm.MainImage.Invalidate();
@@ -814,10 +774,10 @@ namespace CameraCanvas
 
         private void UpdateDrawingDisplayPanelLocation()
         {
-            //TODO refactor
+            // TODO refactor
             Control statusPanel = ((CCMainForm)ccMainForm).StatusPanel;
             CCMainForm mainForm = ((CCMainForm)ccMainForm);
-            int buffer = 50;
+
             switch (this.orientation)
             {
                 case ToolbarOrientation.HorizontalTop:
@@ -827,11 +787,9 @@ namespace CameraCanvas
                     break;
                 case ToolbarOrientation.VerticalRight:
                     statusPanel.Top = 0;
-                    //statusPanel.Left = (mainForm.Width - this.Width) - statusPanel.Width - buffer;
                     statusPanel.Left = 0;
                     break;
                 case ToolbarOrientation.HorizontalBottom:
-                    //statusPanel.Top = (mainForm.Height - this.Height) - statusPanel.Height - buffer;
                     statusPanel.Top = 0;
                     statusPanel.Left = 0;
                     break;
@@ -840,7 +798,6 @@ namespace CameraCanvas
             }
         }
 
-
         /// <summary>
         /// Change the size of all the buttons on the toolbar to a new size.
         /// </summary>
@@ -848,35 +805,35 @@ namespace CameraCanvas
         /// <param name="newHeight"></param>
         public void ChangeButtonSize(int newWidth, int newHeight)
         {
-            //do not let new values go below min or above max sizes
+            // Do not let new values go below min or above max sizes
             newWidth = Math.Max(CCButton.MIN_WIDTH, Math.Min(CCButton.MAX_WIDTH, newWidth));
             newHeight = Math.Max(CCButton.MIN_HEIGHT, Math.Min(CCButton.MAX_HEIGHT, newHeight));
 
-            //don't bother redrawing if new size is same as current size
+            // Don't bother redrawing if new size is same as current size
             if (newWidth == buttonWidth && newHeight == buttonHeight)
             {
                 return;
             }
 
-            //update and store new dimensions
+            // Update and store new dimensions
             buttonWidth = newWidth;
             buttonHeight = newHeight;
 
-            //change and update nav buttons
+            // Change and update nav buttons
             foreach (CCButton navBtn in navButtonsPanel.Controls)
             {
                 navBtn.Width = newWidth;
                 navBtn.Height = newHeight;
             }
 
-            //change and update toolbar buttons
+            // Change and update toolbar buttons
             foreach (CCButton toolbarBtn in toolbarButtonsPanel.Controls)
             {
                 toolbarBtn.Width = newWidth;
                 toolbarBtn.Height = newHeight;
             }
 
-            //change and update "more" buttons
+            // Change and update "more" buttons
             morePrevBtn.Size = new Size(newWidth, newHeight);
             moreNextBtn.Size = new Size(newWidth, newHeight);
 
@@ -892,26 +849,26 @@ namespace CameraCanvas
         {
             if (toolbarButtons.Count > 0)
             {
-                //backup previous toolbar, label, and index
+                // Backup previous toolbar, label, and index
                 prevToolbarButtons.Push(toolbarButtons);
                 prevToolbarLabels.Push(toolbarLabel.Text);
                 prevToolbarIndex.Push(toolbarButtonsIndex);
 
-                //enable cancel so you can go back
+                // Enable back/cancel button so you can go back
                 backCCBtn.Enable();
 
-                //enable main menu so you can go back
+                // Enable main menu button so you can go back
                 mainMenuCCBtn.Enable();
             }
 
-            //update current toolbar variables
+            // Update current toolbar variables
             toolbarButtons = newToolbarButtons;
             toolbarLabel.Text = newToolbarName;
 
-            //actually add the new buttons to the toolbar
+            // Actually add the new buttons to the toolbar
             AddButtonsToToolbar(toolbarButtons);
 
-            //TODO refactor make clearer
+            // TODO refactor make clearer
 
             SlideToolbarButtonsToCenter();
         }
@@ -921,7 +878,7 @@ namespace CameraCanvas
         /// </summary>
         private void SlideToolbarButtonsToCenter()
         {
-            //if the toolbar is larger than the screen: slide the first icon to the left most position
+            // if the toolbar is larger than the screen: slide the first icon to the left most position
             while (
                 (toolbarButtonsIndex < toolbarButtons.Count / 2)
                 &&
@@ -931,7 +888,7 @@ namespace CameraCanvas
                 this.SlideToolbarButtonsToNext();
             }
 
-            //if at this point the first icon will be just off screen so slide it back on screen
+            // if at this point the first icon will be just off screen so slide it back on screen
             if ((toolbarButtonsPanel.Location.X < 0 || toolbarButtonsPanel.Location.Y < 0))
             {
                 this.SlideToolbarButtonsToPrev();
@@ -945,27 +902,27 @@ namespace CameraCanvas
         {
             if (prevToolbarButtons.Count > 0)
             {
-                //update current variables to previous from the stacks
+                // Update current variables to previous from the stacks
                 toolbarButtons = prevToolbarButtons.Pop();
                 toolbarLabel.Text = prevToolbarLabels.Pop();
                 
-                //actually add the buttons to the toolbar
+                // Actually add the buttons to the toolbar
                 AddButtonsToToolbar(toolbarButtons);
 
-                //slide the toolbar back to the previous index
+                // Slide the toolbar back to the previous index
                 toolbarButtonsIndex = prevToolbarIndex.Pop();
                 UpdateToolbarButtonsLocation(toolbarButtonsPanel, toolbarButtonsIndex, SlideDirection.Next);
 
-                //we are now at the top most level of buttons
+                // We are now at the top most level of buttons
                 if (prevToolbarButtons.Count == 0)
                 {
-                    //cancel button cannot go up anymore
+                    // Back/Cancel button cannot go back anymore
                     backCCBtn.Disable();
 
-                    //reset the form state
+                    // Reset the form state
                     ((CCMainForm)ccMainForm).resetState();
 
-                    //main menu button should not work since we are at main menu
+                    // Main menu button should not work since we are at main menu
                     mainMenuCCBtn.Disable();
                 }
             }
@@ -976,7 +933,7 @@ namespace CameraCanvas
         /// </summary>
         public void RemoveAllToolbarButtons()
         {
-            //the Main Menu buttons are the first thing (bottommost) in the stack
+            // The Main Menu buttons are the first thing (bottommost) in the stack
             while (prevToolbarButtons.Count > 0)
             {
                 RemoveCurrentToolbarButtons();
@@ -988,14 +945,14 @@ namespace CameraCanvas
         /// </summary>
         public void SlideToolbarButtonsToPrev()
         {
-            //do not slide before the first button
+            // Do not slide before the first button
             if (toolbarButtonsIndex > 0)
             {
                 UpdateToolbarButtonsLocation(toolbarButtonsPanel, 1, SlideDirection.Previous);
                 toolbarButtonsIndex--;
             }
 
-            //if autosliding and at first button, wrap around to the last button
+            // If autosliding and at first button, wrap around to the last button
             else if (toolbarButtonsIndex == 0 && this.autoSlide == true)
             {
                 UpdateToolbarButtonsLocation(toolbarButtonsPanel, toolbarButtons.Count - 1, SlideDirection.Next);
@@ -1010,14 +967,14 @@ namespace CameraCanvas
         /// </summary>
         public void SlideToolbarButtonsToNext()
         {
-            //do not slide after the last button
+            // Do not slide after the last button
             if (toolbarButtonsIndex < toolbarButtons.Count - 1)
             {
                 UpdateToolbarButtonsLocation(toolbarButtonsPanel, 1, SlideDirection.Next);
                 toolbarButtonsIndex++;
             }
 
-            //if autosliding and at last button, wrap around to first button
+            // If autosliding and at last button, wrap around to first button
             else if (toolbarButtonsIndex == toolbarButtons.Count - 1 && this.autoSlide == true)
             {
                 UpdateToolbarButtonsLocation(toolbarButtonsPanel, toolbarButtons.Count - 1, SlideDirection.Previous);
@@ -1035,7 +992,7 @@ namespace CameraCanvas
         /// <param name="direction"></param>
         private void UpdateToolbarButtonsLocation(Panel panel, int buttonPlacesToSlide, SlideDirection direction)
         {
-            //if sliding towards next, we are moving the toolbar in the negative direction
+            // If sliding towards next, we are moving the toolbar in the negative direction
             if (direction == SlideDirection.Next)
             {
                 buttonPlacesToSlide = -1 * buttonPlacesToSlide;
@@ -1046,12 +1003,12 @@ namespace CameraCanvas
             switch (this.orientation)
             {
                 case ToolbarOrientation.HorizontalTop:
-                    //same as HorizontalBottom
+                    // same as HorizontalBottom
                 case ToolbarOrientation.HorizontalBottom:
                     newLocation.X = panel.Location.X + buttonPlacesToSlide * (buttonWidth + SPACE_BTWN_BTNS);
                     break;
                 case ToolbarOrientation.VerticalLeft:
-                    //same as VerticalRight
+                    // same as VerticalRight
                 case ToolbarOrientation.VerticalRight:
                     newLocation.Y = panel.Location.Y + buttonPlacesToSlide * (buttonHeight + SPACE_BTWN_BTNS);
                     break;
@@ -1064,6 +1021,5 @@ namespace CameraCanvas
             ShowMoreArrows();
         }
 
-    }//end class
-
-}//end namespace
+    } // end class
+} // end namespace
