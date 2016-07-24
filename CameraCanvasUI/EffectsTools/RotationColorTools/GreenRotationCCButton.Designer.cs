@@ -1,0 +1,4 @@
+﻿namespace CameraCanvas.EffectsTools.RotationColorTools
+{
+
+}

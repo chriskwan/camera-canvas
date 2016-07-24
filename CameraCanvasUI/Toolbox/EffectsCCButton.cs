@@ -36,6 +36,21 @@ namespace CameraCanvas.Toolbox
             CCButton grayscaleBtn = new CCButton(this.ccToolbar, "Grayscale", "Icons/Grayscale.png");
             grayscaleBtn.Click += new EventHandler(grayscaleBtn_Click);
             effectsToolbarButtons.Add(grayscaleBtn);
+
+            CCButton uselessTestedBtn = new CCButton(this.ccToolbar, "Useless", "Icons/Grayscale.png");
+            uselessTestedBtn.Click += new EventHandler(uselessTestedBtn_Click);
+            effectsToolbarButtons.Add(uselessTestedBtn);
+        }
+
+        //MARK: For playing-around testing 
+        void uselessTestedBtn_Click(object sender, EventArgs e)
+        {
+            //TODO refactor 
+            this.ccToolbar.CCMainForm.takeSnap("Useless button invalidated here");
+            //implement any effect tool functionality here            
+
+            this.ccToolbar.CCMainForm.MainImage.Invalidate();
+            this.ccToolbar.CCMainForm.getImagePanel().Invalidate();
         }
 
         void grayscaleBtn_Click(object sender, EventArgs e)

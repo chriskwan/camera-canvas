@@ -24,7 +24,7 @@ namespace CameraCanvas
 
         /// <summary>
         /// Defines possible directions that the CCToolbar can slide
-        /// when sliding in place is enabled.
+        /// when sliding in-place is enabled.
         /// </summary>
         public enum SlideDirection
         {
