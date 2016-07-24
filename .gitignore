@@ -2,3 +2,4 @@ UpgradeLog*.htm
 bin/
 obj/
 .vs/
+.suo
