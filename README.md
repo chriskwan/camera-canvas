@@ -1,6 +1,6 @@
 # Camera Canvas: Image Editing Software for People with Disabilities
 
-[**Christopher Kwan**](http://cs-people.bu.edu/ckwan/) and [**Margrit Betke**](http://www.cs.bu.edu/~betke/)
+**Christopher Kwan** and [**Margrit Betke**](http://www.cs.bu.edu/~betke/)
 
 { ckwan, betke } @ cs.bu.edu
 
