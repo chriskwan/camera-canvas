@@ -20,7 +20,7 @@ Contribute to Camera Canvas by creating a fork of the repository, making changes
 * [GitHub Tutorial](https://guides.github.com/activities/hello-world/)
 * [How to Fork a Repo](https://help.github.com/articles/fork-a-repo/)
 
-[![Photo editing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop.png) [![A user using Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy33Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy.png) [![Drawing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw.png)
+[![Photo editing in Camera Canvas](./HorizontalBigCrop25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/HorizontalBigCrop.png) [![A user using Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy33Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/UserStudy.png) [![Drawing in Camera Canvas](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw25Percent.png)](http://cs-people.bu.edu/ckwan/cameracanvas/VerticalSmallDraw.png)
 
 ## Downloads
 
